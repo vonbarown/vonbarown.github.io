@@ -16,7 +16,7 @@
   height: 70vh;
   display: flex;
   align-items: center;
-  box-shadow: 0 3px 10px 2px #053d50;
+  box-shadow: 0 3px 10px 2px darkslateblue;
 }
 
 input,

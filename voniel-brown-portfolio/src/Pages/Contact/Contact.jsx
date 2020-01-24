@@ -21,6 +21,16 @@ class Contact extends Component {
         });
     };
 
+    handleSubmit = e => {
+        e.preventDefault()
+
+        try {
+
+        } catch (error) {
+            console.log(error);
+
+        }
+    }
 
     render() {
         console.log(this.state);
@@ -28,7 +38,7 @@ class Contact extends Component {
         return (
             <div className='contactPage'>
                 <div className='contactPage-formField'>
-                    <form className='contact' onSubmit={e => e.preventDefault()} required>
+                    <form className='contact' onSubmit={this.handleSubmit} required>
                         <div className='inputField'>
                             <label htmlFor="name">Name</label> <br />
                             <input name='name' type="text" placeholder=' Name..' onChange={this.handleInput} value={this.state.name} required className='inputBar' />
