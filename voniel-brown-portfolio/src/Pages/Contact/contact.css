@@ -1,11 +1,47 @@
 .contact {
   display: flex;
   flex-direction: column;
-  width: 500px;
-  gap: 20px;
+  width: 40vw;
+  gap: 60px;
 }
 .contactPage {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+.contactPage-formField {
+  border: 1px solid black;
+  padding: 60px;
+  border-radius: 5px;
+  height: 70vh;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 3px 10px 2px #053d50;
+}
+
+input,
+#message {
+  width: 100%;
+}
+
+.inputField {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  font-size: 20px;
+}
+button {
+  height: 40px;
+  width: 80px;
+  border-radius: 5px;
+  color: white;
+  background-color: #347cfb;
+  margin-bottom: 10px;
+  font-size: 15px;
+}
+
+.inputBar {
+  width: 576px;
+  height: 30px;
+  font-size: 18px;
 }
