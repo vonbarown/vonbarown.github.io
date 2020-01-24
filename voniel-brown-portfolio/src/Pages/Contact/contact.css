@@ -1,0 +1,11 @@
+.contact {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  gap: 20px;
+}
+.contactPage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
