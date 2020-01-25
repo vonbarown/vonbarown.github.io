@@ -1,8 +1,9 @@
 .contact {
   display: flex;
   flex-direction: column;
-  width: 40vw;
+  max-width: 40vw;
   gap: 60px;
+  position: relative;
 }
 .contactPage {
   display: flex;
@@ -17,6 +18,8 @@
   display: flex;
   align-items: center;
   box-shadow: 0 3px 10px 2px darkslateblue;
+  position: absolute;
+  display: inline;
 }
 
 input,
@@ -38,6 +41,11 @@ button {
   background-color: #347cfb;
   margin-bottom: 10px;
   font-size: 15px;
+  position: absolute;
+}
+
+.submit {
+  top: 420px;
 }
 
 .inputBar {

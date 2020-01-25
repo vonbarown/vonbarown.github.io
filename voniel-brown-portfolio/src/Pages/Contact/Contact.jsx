@@ -54,7 +54,7 @@ class Contact extends Component {
                                 onChange={this.handleInput} value={this.state.message}
                                 required ></textarea>
                         </div>
-                        <button>Submit</button>
+                        <button className='submit'>Submit</button>
                     </form>
                 </div>
             </div>
