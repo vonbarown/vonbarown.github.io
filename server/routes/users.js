@@ -37,14 +37,11 @@ const postContact = (req, res, next) => {
   //     message: req.body.message
   //   })
 
-
-  let content = `name: ${req.body.name} \n email: ${req.body.email} \n message: ${req.body.message} `
-
   let mail = {
     from: req.body.name,
-    to: 'bvoniel@gmail.vom',
-    subject: 'New Message from Contact Form',
-    text: content
+    to: 'bvoniel@gmail.com',
+    subject: 'New Message from Portfolio Website',
+    text: `name: ${req.body.name} \n email: ${req.body.email} \n message: ${req.body.message} `
   }
 
   transporter.sendMail(mail, (err, data) => {
