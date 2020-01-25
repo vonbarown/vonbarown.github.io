@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-
+import axios from 'axios'
 
 import './contact.css'
 class Contact extends Component {
@@ -21,10 +21,20 @@ class Contact extends Component {
         });
     };
 
-    handleSubmit = e => {
+    handleSubmit = async e => {
         e.preventDefault()
+        const { name, email, message } = this.state
 
         try {
+            axios.post('http://localhost:8080/users/send',
+                {
+                    name,
+                    email,
+                    message
+                }
+            )
+
+            // console.log(mail);
 
         } catch (error) {
             console.log(error);
