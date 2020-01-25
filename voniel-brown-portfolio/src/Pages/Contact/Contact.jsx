@@ -13,13 +13,8 @@ class Contact extends Component {
         }
     }
 
-    handleInput = e => {
-        const value = e.target.value;
-        this.setState({
-            ...this.prevState,
-            [e.target.name]: value
-        });
-    };
+    handleInput = e => this.setState({ [e.target.name]: e.target.value });
+
 
     handleSubmit = async e => {
         e.preventDefault()
