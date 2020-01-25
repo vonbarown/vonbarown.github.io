@@ -16,26 +16,27 @@ class Contact extends Component {
     handleInput = e => this.setState({ [e.target.name]: e.target.value });
 
 
-    handleSubmit = async e => {
-        e.preventDefault()
-        const { name, email, message } = this.state
+    // handleSubmit = async e => {
+    //     e.preventDefault()
+    //     const { name, email, message } = this.state
 
-        try {
-            axios.post('http://localhost:8080/users/send',
-                {
-                    name,
-                    email,
-                    message
-                }
-            )
+    //     try {
+    //         axios.post('http://localhost:8080/users/send',
+    //             {
+    //                 name,
+    //                 email,
+    //                 message
+    //             }
+    //         )
 
-            // console.log(mail);
+    //         // console.log(mail);
 
-        } catch (error) {
-            console.log(error);
+    //     } catch (error) {
+    //         console.log(error);
 
-        }
-    }
+    //     }
+    // }
+
 
     render() {
         console.log(this.state);
@@ -57,9 +58,10 @@ class Contact extends Component {
                             <textarea name="message" id="message" cols="30" rows="10"
                                 placeholder='Message....'
                                 onChange={this.handleInput} value={this.state.message}
-                                required ></textarea>
+                                required
+                            ></textarea>
                         </div>
-                        <button className='submit'>Submit</button>
+                        <button className='submit'>{<a href={`mailto:vonielbrown@pursuit.org?subject=New Message%20from%20Portfolio%20Website&body=${this.state.message}`}>Submit</a>}</button>
                     </form>
                 </div>
             </div>

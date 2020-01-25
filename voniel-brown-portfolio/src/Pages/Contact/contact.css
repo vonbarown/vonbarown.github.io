@@ -24,6 +24,9 @@ input,
   width: 100%;
 }
 
+#message {
+  resize: none;
+}
 .inputField {
   display: flex;
   flex-direction: column;
