@@ -8,7 +8,7 @@ import { useDarkMode } from '../../Theme/UseDarkMode'
 import './navigation.css'
 
 
-export const NavBar = () => {
+export const NavBar = (props) => {
 
     const [theme, toggleTheme, componentMounted] = useDarkMode();
     const themeMode = theme === 'light' ? lightTheme : darkTheme;
@@ -25,9 +25,9 @@ export const NavBar = () => {
             <h3>Voniel Brown</h3>
             <div className='navItems'>
                 <a href="/">Home</a> {'  '}
-                <a href="/about">About</a>{'  '}
-                <a href="/portfolio">Portfolio</a>
-                <a href="/contact">Contact</a>
+                <button onClick={props.scrollTo} name='about'>About</button>
+                <button onClick={props.scrollTo} name='portfolio'>Portfolio</button>
+                <button name='contacts' onClick={props.scrollTo}>Contacts</button>
             </div>
 
             <div className='toggleButton'>
