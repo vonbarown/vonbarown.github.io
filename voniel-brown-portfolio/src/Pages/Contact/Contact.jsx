@@ -37,7 +37,7 @@ class Contact extends Component {
     //     }
     // }
 
-    handleButtonClick = () => window.location.href = `mailto:vonielbrown@pursuit.org?subject=New Message%20from%20Portfolio%20Website&body=${this.state.message}`
+    handleButtonClick = () => window.location.href = `mailto:vonielbrown@pursuit.org?subject=New%20Message%20from%20${this.state.name}%20on%20Portfolio%20Website%20&body=${this.state.message}`
 
     render() {
         console.log(this.state);
@@ -49,10 +49,6 @@ class Contact extends Component {
                         <div className='inputField'>
                             <label htmlFor="name">Name</label> <br />
                             <input name='name' type="text" placeholder=' Name..' onChange={this.handleInput} value={this.state.name} required className='inputBar' />
-                        </div>
-                        <div className='inputField'>
-                            <label htmlFor="email">Email</label> <br />
-                            <input type="email" name='email' placeholder='  Email..' onChange={this.handleInput} value={this.state.email} required className='inputBar' />
                         </div>
                         <div className='inputField'>
                             <label htmlFor="message">Message</label> <br />
