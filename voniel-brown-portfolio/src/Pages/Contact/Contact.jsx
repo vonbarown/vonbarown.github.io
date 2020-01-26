@@ -37,6 +37,7 @@ class Contact extends Component {
     //     }
     // }
 
+    handleButtonClick = () => window.location.href = `mailto:vonielbrown@pursuit.org?subject=New Message%20from%20Portfolio%20Website&body=${this.state.message}`
 
     render() {
         console.log(this.state);
@@ -44,7 +45,7 @@ class Contact extends Component {
         return (
             <div className='contactPage'>
                 <div className='contactPage-formField'>
-                    <form className='contact' onSubmit={this.handleSubmit} required>
+                    <form className='contact' onSubmit={e => e.preventDefault()} required>
                         <div className='inputField'>
                             <label htmlFor="name">Name</label> <br />
                             <input name='name' type="text" placeholder=' Name..' onChange={this.handleInput} value={this.state.name} required className='inputBar' />
@@ -61,7 +62,7 @@ class Contact extends Component {
                                 required
                             ></textarea>
                         </div>
-                        <button className='submit'>{<a href={`mailto:vonielbrown@pursuit.org?subject=New Message%20from%20Portfolio%20Website&body=${this.state.message}`}>Submit</a>}</button>
+                        <button className='submit' onClick={this.handleButtonClick}>Submit</button>
                     </form>
                 </div>
             </div>
