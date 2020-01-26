@@ -13,34 +13,31 @@ class Contact extends Component {
         }
     }
 
-    handleInput = e => {
-        const value = e.target.value;
-        this.setState({
-            ...this.prevState,
-            [e.target.name]: value
-        });
-    };
+    handleInput = e => this.setState({ [e.target.name]: e.target.value });
 
-    handleSubmit = async e => {
-        e.preventDefault()
-        const { name, email, message } = this.state
 
-        try {
-            axios.post('http://localhost:8080/users/send',
-                {
-                    name,
-                    email,
-                    message
-                }
-            )
+    // handleSubmit = async e => {
+    //     e.preventDefault()
+    //     const { name, email, message } = this.state
 
-            // console.log(mail);
+    //     try {
+    //         axios.post('http://localhost:8080/users/send',
+    //             {
+    //                 name,
+    //                 email,
+    //                 message
+    //             }
+    //         )
 
-        } catch (error) {
-            console.log(error);
+    //         // console.log(mail);
 
-        }
-    }
+    //     } catch (error) {
+    //         console.log(error);
+
+    //     }
+    // }
+
+    handleButtonClick = () => window.location.href = `mailto:vonielbrown@pursuit.org?subject=New Message%20from%20Portfolio%20Website&body=${this.state.message}`
 
     render() {
         console.log(this.state);
@@ -48,7 +45,7 @@ class Contact extends Component {
         return (
             <div className='contactPage'>
                 <div className='contactPage-formField'>
-                    <form className='contact' onSubmit={this.handleSubmit} required>
+                    <form className='contact' onSubmit={e => e.preventDefault()} required>
                         <div className='inputField'>
                             <label htmlFor="name">Name</label> <br />
                             <input name='name' type="text" placeholder=' Name..' onChange={this.handleInput} value={this.state.name} required className='inputBar' />
@@ -62,9 +59,10 @@ class Contact extends Component {
                             <textarea name="message" id="message" cols="30" rows="10"
                                 placeholder='Message....'
                                 onChange={this.handleInput} value={this.state.message}
-                                required ></textarea>
+                                required
+                            ></textarea>
                         </div>
-                        <button className='submit'>Submit</button>
+                        <button className='submit' onClick={this.handleButtonClick}>Submit</button>
                     </form>
                 </div>
             </div>
