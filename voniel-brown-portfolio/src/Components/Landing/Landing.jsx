@@ -37,7 +37,7 @@ class Landing extends Component {
                     // </Switch>
                 }
                 <Home />
-
+                <button name='portfolio' onClick={this.scrollTo}>\/</button>
                 <Element name='portfolio'>
                     <Portfolio />
                 </Element>
