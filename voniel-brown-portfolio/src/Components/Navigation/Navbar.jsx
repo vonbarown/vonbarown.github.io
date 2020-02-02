@@ -26,7 +26,7 @@ export const NavBar = () => {
             <div className='navItems'>
                 <a href="/">Home</a> {'  '}
                 <a href="/about">About</a>{'  '}
-                <a href="/portfolio">Portfolio</a>
+                <a href="/projects">Projects</a>
                 <a href="/contact">Contact</a>
             </div>
 
