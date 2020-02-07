@@ -15,6 +15,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(path.join(__dirname, '../voniel-brown-portfolio/build')));
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
@@ -36,5 +37,9 @@ app.use((err, req, res, next) => {
     res.status(err.status || 500);
     res.render('error');
 });
+
+app.get('*', (req, res) => {
+    res.sendFile(path.resolve(__dirname, '../voniel-brown-portfolio/build/index.html'))
+})
 
 module.exports = app;
