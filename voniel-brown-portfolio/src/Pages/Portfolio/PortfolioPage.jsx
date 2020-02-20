@@ -3,10 +3,21 @@ import './portfolio.css'
 
 
 class Portfolio extends Component {
+    state = {
+        projects: ['react', 'js', 'hoon', 'tvityvoj', 'ytvtyglkgc']
+    }
+
+
     render() {
         return (
             <div className='portfolioPage'>
-                portfolio
+
+
+                {
+                    this.state.projects.map(el => {
+                        return <div className='project-card'>{el}</div>
+                    })
+                }
             </div>
         )
     }
