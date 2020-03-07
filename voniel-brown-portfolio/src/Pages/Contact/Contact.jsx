@@ -47,18 +47,34 @@ class Contact extends Component {
                 <div className='contactPage-formField'>
                     <form className='contact' onSubmit={e => e.preventDefault()} required>
                         <div className='inputField'>
-                            <label htmlFor="name">Name</label> <br />
-                            <input name='name' type="text" placeholder=' Name..' onChange={this.handleInput} value={this.state.name} required className='inputBar' />
+                            <input
+                                name='name'
+                                type="text"
+                                placeholder=' Name..'
+                                onChange={this.handleInput}
+                                value={this.state.name}
+                                required
+                                className='inputBar contact-input'
+                            />
                         </div>
                         <div className='inputField'>
-                            <label htmlFor="message">Message</label> <br />
-                            <textarea name="message" id="message" cols="30" rows="10"
+                            <textarea
+                                className='contact-input'
+                                name="message"
+                                id="message"
+                                cols="30"
+                                rows="10"
                                 placeholder='Message....'
-                                onChange={this.handleInput} value={this.state.message}
+                                onChange={this.handleInput}
+                                value={this.state.message}
                                 required
                             ></textarea>
                         </div>
-                        <button className='submit' onClick={this.handleButtonClick}>Submit</button>
+                        <button
+                            className='submit'
+                            onClick={this.handleButtonClick}
+                        >Submit
+                        </button>
                     </form>
                 </div>
             </div>

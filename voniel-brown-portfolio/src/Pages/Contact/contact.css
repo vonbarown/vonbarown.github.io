@@ -14,22 +14,20 @@
   width: 100vw;
 }
 .contactPage-formField {
-  border: 1px solid black;
   padding: 60px;
   border-radius: 5px;
   align-items: center;
-  box-shadow: 0 3px 10px 2px darkslateblue;
+  /* box-shadow: 0 3px 10px 2px darkslateblue; */
   display: inline;
+  height: 100px;
 }
 
 input,
 #message {
   width: 100%;
+  height: 50px;
 }
 
-#message {
-  resize: none;
-}
 .inputField {
   display: flex;
   flex-direction: column;
@@ -46,9 +44,20 @@ button {
   font-size: 15px;
   position: relative;
 }
+.submit {
+  width: 40vw;
+  background-color: teal;
+}
 
 .inputBar {
   width: 576px;
   height: 30px;
   font-size: 18px;
+}
+
+.contact-input {
+  background-color: transparent;
+  border: transparent;
+  border-bottom: 2px solid black;
+  font-size: 20px;
 }

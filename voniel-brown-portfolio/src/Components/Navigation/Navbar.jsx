@@ -28,7 +28,7 @@ export const NavBar = (props) => {
                 <button onClick={props.scrollTo} name='home'>Home</button>
                 <button onClick={props.scrollTo} name='about'>About</button>
                 <button onClick={props.scrollTo} name='portfolio'>Projects</button>
-                <button name='contacts' onClick={props.scrollTo}>Contacts</button>
+                <button name='contacts' onClick={props.scrollTo}>Contact</button>
             </div>
 
             <div className='toggleButton'>

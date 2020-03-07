@@ -3,3 +3,17 @@
   width: 100vw;
   border: 1px solid black;
 }
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.blurb {
+  width: 30vw;
+}
+
+.Voniel {
+  height: 120px;
+  /* width: 90vw; */
+}
