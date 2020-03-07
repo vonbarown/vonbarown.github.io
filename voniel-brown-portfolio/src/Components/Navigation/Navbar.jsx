@@ -6,6 +6,7 @@ import Toggle from '../../Theme/Toggle'
 import { useDarkMode } from '../../Theme/UseDarkMode'
 
 import './navigation.css'
+import { Link } from 'react-router-dom'
 
 
 export const NavBar = (props) => {
@@ -24,7 +25,7 @@ export const NavBar = (props) => {
             </ThemeProvider >
             <h3>Voniel Brown</h3>
             <div className='navItems'>
-                <a href="/">Home</a> {'  '}
+                <Link to="/">Home</Link> {'  '}
                 <button onClick={props.scrollTo} name='about'>About</button>
                 <button onClick={props.scrollTo} name='portfolio'>Projects</button>
                 <button name='contacts' onClick={props.scrollTo}>Contacts</button>

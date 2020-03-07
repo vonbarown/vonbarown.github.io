@@ -4,6 +4,8 @@ import { ThemeProvider } from 'styled-components'
 import { lightTheme, darkTheme } from './Theme/Theme'
 import { useDarkMode } from './Theme/UseDarkMode'
 import Landing from './Components/Landing/Landing'
+import { Route, Switch } from 'react-router-dom'
+import Contact from './Pages/Contact/Contact';
 
 function App() {
   const [theme, componentMounted] = useDarkMode();

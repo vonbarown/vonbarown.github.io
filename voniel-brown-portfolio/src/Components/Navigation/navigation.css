@@ -9,6 +9,8 @@
   display: flex;
   gap: 20%;
   align-items: flex-start;
+  height: 90px;
+  background-color: black;
 }
 
 .navItems {

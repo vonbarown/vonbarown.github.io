@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import { Route, Switch } from 'react-router-dom'
 import Home from '../../Pages/Home/HomePage'
 import About from '../../Pages/About/AboutPage'
 import { NavBar } from '../Navigation/Navbar'
@@ -29,13 +28,6 @@ class Landing extends Component {
         return (
             <div className='landing'>
                 <NavBar scrollTo={this.scrollTo} />
-                {  // <Switch>
-                    //     <Route path='/contact' component={Contact} />
-                    //     <Route path='/about' component={About} />
-                    //     <Route path='/portfolio' component={Portfolio} />
-                    //     <Route path='/' component={Home} />
-                    // </Switch>
-                }
                 <Home />
                 <button name='portfolio' onClick={this.scrollTo}>\/</button>
                 <Element name='portfolio'>
