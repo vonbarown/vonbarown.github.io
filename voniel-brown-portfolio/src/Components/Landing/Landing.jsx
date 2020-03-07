@@ -6,7 +6,7 @@ import { NavBar } from '../Navigation/Navbar'
 import { Footer } from '../Navigation/Footer'
 import Portfolio from '../../Pages/Portfolio/PortfolioPage'
 import Contact from '../../Pages/Contact/Contact'
-import { Link, DirectLink, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
+import { Element, animateScroll as scroll, scroller } from 'react-scroll'
 
 import './Landing.css'
 

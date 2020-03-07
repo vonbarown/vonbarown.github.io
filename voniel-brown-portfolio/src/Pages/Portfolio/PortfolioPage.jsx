@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import './portfolio.css'
+import { Link } from 'react-router-dom'
 
 
 class Portfolio extends Component {
@@ -15,7 +16,9 @@ class Portfolio extends Component {
 
                 {
                     this.state.projects.map(el => {
-                        return <div className='project-card'>{el}</div>
+                        return <Link to={`/project/${el}`} className='project-card'>
+                            {el}
+                        </Link>
                     })
                 }
             </div>
