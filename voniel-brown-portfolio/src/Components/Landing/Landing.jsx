@@ -28,7 +28,9 @@ class Landing extends Component {
         return (
             <div className='landing'>
                 <NavBar scrollTo={this.scrollTo} />
-                <Home />
+                <Element name='home'>
+                    <Home />
+                </Element>
                 <button name='portfolio' onClick={this.scrollTo}>\/</button>
                 <Element name='portfolio'>
                     <Portfolio />

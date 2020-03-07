@@ -10,7 +10,11 @@
   gap: 20%;
   align-items: flex-start;
   height: 90px;
-  background-color: black;
+  background-color: transparent;
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 90;
 }
 
 .navItems {

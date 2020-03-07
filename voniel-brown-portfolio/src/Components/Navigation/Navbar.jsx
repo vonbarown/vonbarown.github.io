@@ -25,7 +25,7 @@ export const NavBar = (props) => {
             </ThemeProvider >
             <h3>Voniel Brown</h3>
             <div className='navItems'>
-                <Link to="/">Home</Link> {'  '}
+                <button onClick={props.scrollTo} name='home'>Home</button>
                 <button onClick={props.scrollTo} name='about'>About</button>
                 <button onClick={props.scrollTo} name='portfolio'>Projects</button>
                 <button name='contacts' onClick={props.scrollTo}>Contacts</button>
