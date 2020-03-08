@@ -9,6 +9,7 @@
 }
 
 .project-card {
+  width: 20vw;
   height: 350px;
   margin-left: 5px;
   color: black;
@@ -24,14 +25,23 @@
 .project-card:hover {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
-/* .portfolioPage .inner-frame {
-} */
 
-.grid {
-  width: 50vw;
-  display: grid;
-  grid-template-columns: 3fr 3fr 3fr;
-  grid-gap: 20px;
-  align-items: center;
+.portfolioPage .flex {
+  display: flex;
   justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+@media only screen and (max-width: 800px) {
+  .flex {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    height: 800px;
+  }
+
+  .project-card {
+    width: 30vw;
+  }
 }

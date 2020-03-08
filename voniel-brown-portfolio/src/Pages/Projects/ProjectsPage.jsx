@@ -6,7 +6,7 @@ const Portfolio = () => {
 
     const projects = [
         {
-            title: `fwr`,
+            title: `Synergie`,
             description: `hello`,
             img_url: ``,
             live: '',
@@ -26,34 +26,34 @@ const Portfolio = () => {
             live: '',
             repo: ''
         },
-        {
-            title: `fwrdgq`,
-            description: `mellow`,
-            img_url: ``,
-            live: '',
-            repo: ''
-        },
-        {
-            title: `fwrdgqdefq`,
-            description: `fellow`,
-            img_url: ``,
-            live: '',
-            repo: ''
-        },
-        {
-            title: `fwrdgdqqdefq`,
-            description: `just`,
-            img_url: ``,
-            live: '',
-            repo: ''
-        },
+        // {
+        //     title: `fwrdgq`,
+        //     description: `mellow`,
+        //     img_url: ``,
+        //     live: '',
+        //     repo: ''
+        // },
+        // {
+        //     title: `fwrdgqdefq`,
+        //     description: `fellow`,
+        //     img_url: ``,
+        //     live: '',
+        //     repo: ''
+        // },
+        // {
+        //     title: `fwrdgdqqdefq`,
+        //     description: `just`,
+        //     img_url: ``,
+        //     live: '',
+        //     repo: ''
+        // },
 
     ]
 
     return (
         <div className='portfolioPage'>
             <div className='inner-frame'>
-                <div className='grid'>
+                <div className='flex'>
                     {
                         projects.map(project => <ProjectCard project={project} />)
                     }
