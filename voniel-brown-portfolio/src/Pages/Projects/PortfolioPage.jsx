@@ -1,29 +1,38 @@
-import React, { Component } from 'react'
-import './portfolio.css'
+import React from 'react'
 import { Link } from 'react-router-dom'
+import './portfolio.css'
 
+const Portfolio = () => {
 
-class Portfolio extends Component {
-    state = {
-        projects: ['react', 'js', 'hoon', 'tvityvoj', 'ytvtyglkgc']
-    }
+    const projects = [
+        {
+            title: 'fwr'
+        },
+        {
+            title: 'fwrfgw'
+        },
+        {
+            title: 'fwrdfqd'
+        },
+        {
+            title: 'fwrdgq'
+        }
+    ]
 
-
-    render() {
-        return (
-            <div className='portfolioPage'>
-
-
+    return (
+        <div className='portfolioPage'>
+            <div className='inner-frame'>
                 {
-                    this.state.projects.map(el => {
-                        return <Link to={`/project/${el}`} className='project-card' key={el}>
-                            {el}
+                    projects.map(project => {
+                        return <Link to={`/project/${project.title}`} className='project-card' key={project}>
+                            {project.title}
                         </Link>
                     })
                 }
             </div>
-        )
-    }
+        </div>
+    )
 }
+
 
 export default Portfolio

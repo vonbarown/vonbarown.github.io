@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import Home from '../../Pages/Home/HomePage'
-import About from '../../Pages/About/AboutPage'
+import About from '../../Pages/About/BioPage'
 import { NavBar } from '../Navigation/Navbar'
 import { Footer } from '../Navigation/Footer'
 import Portfolio from '../../Pages/Projects/PortfolioPage'
