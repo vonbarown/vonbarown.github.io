@@ -8,7 +8,7 @@
 }
 
 .scrollToTop {
-  top: 0;
+  top: -90px;
   left: 90vw;
   z-index: 100;
   display: flex;
