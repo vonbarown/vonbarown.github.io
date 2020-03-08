@@ -1,35 +1,16 @@
 import React from 'react'
-import { ThemeProvider } from 'styled-components'
-import { lightTheme, darkTheme } from '../../Theme/Theme'
-import { GlobalStyles } from '../../Theme/Global'
-import Toggle from '../../Theme/Toggle'
-import { useDarkMode } from '../../Theme/UseDarkMode'
-import { DrawerToggleButton } from './DrawerToggle'
+
 import './navigation.css'
 
-
-export const NavBar = (props) => {
-
-    const [theme, toggleTheme, componentMounted] = useDarkMode();
-    const themeMode = theme === 'light' ? lightTheme : darkTheme;
-
-    if (!componentMounted) {
-        return <div />
-    }
-
+export const SideDrawer = (props) => {
     return (
         <div className='navbar'>
             <ThemeProvider theme={themeMode} >
                 <GlobalStyles />
             </ThemeProvider >
             <h2 className='Voniel-Brown'>Voniel Brown</h2>
-            {
-                // <div>
-                //     <DrawerToggleButton />
-                // </div>
-            }
-            <div className='external-links'>
-
+            <div>
+                <DrawerToggleButton />
             </div>
 
             <div className='navItems'>
