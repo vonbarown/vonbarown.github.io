@@ -5,9 +5,9 @@
 }
 
 .navbar {
-  top: 200px;
+  top: 10px;
   left: 0;
-  gap: 20%;
+  gap: 50%;
   z-index: 90;
   height: 90px;
   width: 100vw;
@@ -37,9 +37,28 @@
   width: 100vw;
 }
 
+.footer-link {
+  height: 90px;
+}
+
 .Voniel-Brown {
   font-size: 1.5rem;
   text-decoration: underline;
+}
+
+.fa-icon {
+  font-size: 50px;
+}
+
+.linked-in {
+  color: #0077b5;
+}
+
+.external-links {
+  gap: 10px;
+  color: black;
+  display: flex;
+  text-decoration: none;
 }
 
 /* @media screen and (max-width: 600px) {

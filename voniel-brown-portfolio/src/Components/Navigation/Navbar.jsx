@@ -5,6 +5,7 @@ import { GlobalStyles } from '../../Theme/Global'
 import Toggle from '../../Theme/Toggle'
 import { useDarkMode } from '../../Theme/UseDarkMode'
 import { DrawerToggleButton } from './DrawerToggle'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import './navigation.css'
 
 
@@ -24,12 +25,17 @@ export const NavBar = (props) => {
             </ThemeProvider >
             <h2 className='Voniel-Brown'>Voniel Brown</h2>
             {
-                // <div>
-                //     <DrawerToggleButton />
-                // </div>
+                <div>
+                    <DrawerToggleButton />
+                </div>
             }
             <div className='external-links'>
-
+                <a href="https://github.com/vonbarown">
+                    <FontAwesomeIcon className='fa-icon' icon={['fab', 'github']} />
+                </a>
+                <a href="https://www.linkedin.com/in/vonielbrown/">
+                    <FontAwesomeIcon className='fa-icon linked-in' icon={['fab', 'linkedin']} />
+                </a>
             </div>
 
             <div className='navItems'>
