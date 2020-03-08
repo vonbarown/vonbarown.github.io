@@ -6,7 +6,6 @@ import Toggle from '../../Theme/Toggle'
 import { useDarkMode } from '../../Theme/UseDarkMode'
 
 import './navigation.css'
-import { Link } from 'react-router-dom'
 
 
 export const NavBar = (props) => {

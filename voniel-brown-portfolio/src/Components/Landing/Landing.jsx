@@ -6,8 +6,8 @@ import { Footer } from '../Navigation/Footer'
 import Portfolio from '../../Pages/Projects/PortfolioPage'
 import Contact from '../../Pages/Contact/Contact'
 import { Element, animateScroll as scroll, scroller } from 'react-scroll'
-import { Switch, Route } from 'react-router-dom'
-
+// import { Switch, Route } from 'react-router-dom'
+// import { Project } from '../../Pages/Projects/project'
 import './Landing.css'
 
 class Landing extends Component {
@@ -25,9 +25,6 @@ class Landing extends Component {
     render() {
         return (
             <div className='landing'>
-                <Switch>
-                    <Route path='/project/:id' render={Contact} />
-                </Switch>
 
                 <NavBar scrollTo={this.scrollTo} />
                 <Element name='home'>

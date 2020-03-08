@@ -16,7 +16,7 @@ class Portfolio extends Component {
 
                 {
                     this.state.projects.map(el => {
-                        return <Link to={`/project/${el}`} className='project-card'>
+                        return <Link to={`/project/${el}`} className='project-card' key={el}>
                             {el}
                         </Link>
                     })
