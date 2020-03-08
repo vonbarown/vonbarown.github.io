@@ -23,12 +23,12 @@ export const NavBar = (props) => {
             <ThemeProvider theme={themeMode} >
                 <GlobalStyles />
             </ThemeProvider >
-            <h3>Voniel Brown</h3>
+            <h2 className='Voniel-Brown'>Voniel Brown</h2>
             <div className='navItems'>
-                <button onClick={props.scrollTo} name='home'>Home</button>
-                <button onClick={props.scrollTo} name='about'>About</button>
-                <button onClick={props.scrollTo} name='portfolio'>Projects</button>
-                <button name='contacts' onClick={props.scrollTo}>Contact</button>
+                <button className='nav-button' onClick={props.scrollTo} name='home'>Home</button>
+                <button className='nav-button' onClick={props.scrollTo} name='about'>About</button>
+                <button className='nav-button' onClick={props.scrollTo} name='portfolio'>Projects</button>
+                <button className='nav-button' name='contact' onClick={props.scrollTo}>Contact</button>
             </div>
 
             <div className='toggleButton'>

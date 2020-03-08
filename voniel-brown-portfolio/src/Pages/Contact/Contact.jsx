@@ -59,7 +59,7 @@ class Contact extends Component {
                         </div>
                         <div className='inputField'>
                             <textarea
-                                className='contact-input'
+                                className='contact-input text-area'
                                 name="message"
                                 id="message"
                                 cols="30"
@@ -68,10 +68,11 @@ class Contact extends Component {
                                 onChange={this.handleInput}
                                 value={this.state.message}
                                 required
-                            ></textarea>
+                            >
+                            </textarea>
                         </div>
                         <button
-                            className='submit'
+                            className='submit button-theme'
                             onClick={this.handleButtonClick}
                         >Submit
                         </button>

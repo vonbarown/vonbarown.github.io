@@ -8,5 +8,9 @@
 }
 
 .scrollToTop {
-  margin-bottom: 50px;
+  top: 0;
+  left: 90vw;
+  z-index: 100;
+  display: flex;
+  position: sticky;
 }

@@ -11,11 +11,8 @@ import './Landing.css'
 
 class Landing extends Component {
 
-    scrollToTop = () => {
-        console.log('hello');
+    scrollToTop = () => scroll.scrollToTop();
 
-        scroll.scrollToTop();
-    }
     scrollTo(e) {
         scroller.scrollTo(e.target.name, {
             duration: 800,
@@ -31,17 +28,17 @@ class Landing extends Component {
                 <Element name='home'>
                     <Home />
                 </Element>
-                <button name='portfolio' onClick={this.scrollTo}>\/</button>
+                <button name='portfolio ' className='button-theme' onClick={this.scrollTo}>\/</button>
                 <Element name='portfolio'>
                     <Portfolio />
                 </Element>
                 <Element name='about'>
                     <About />
                 </Element>
-                <Element name='contacts'>
+                <Element name='contact'>
                     <Contact />
                 </Element>
-                <button className='scrollToTop' onClick={this.scrollToTop}>Scroll Up</button>
+                <button className='scrollToTop button-theme' onClick={this.scrollToTop}>Scroll Up</button>
                 <Footer />
             </div >
         )
