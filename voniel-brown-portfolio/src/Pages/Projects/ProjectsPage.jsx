@@ -29,21 +29,29 @@ const Portfolio = () => {
             title: `fwrdgqdefq`,
             description: `fellow`,
             img_url: ``
-        }
+        },
+        {
+            title: `fwrdgdqqdefq`,
+            description: `just`,
+            img_url: ``
+        },
+
     ]
 
     return (
         <div className='portfolioPage'>
             <div className='inner-frame'>
-                {
-                    projects.map(project => {
-                        return <Link to={`/project/${project.title}`} className='project-card' key={project}>
-                            <p>{project.title}</p>
-                            <p>{project.description}</p>
-                            <p>{project.img_url}</p>
-                        </Link>
-                    })
-                }
+                <div className='grid'>
+                    {
+                        projects.map(project => {
+                            return <Link to={`/project/${project.title}`} className='project-card' key={project}>
+                                <p>{project.title}</p>
+                                <p>{project.description}</p>
+                                <img src={project.img_url} alt={project.title} />
+                            </Link>
+                        })
+                    }
+                </div>
             </div>
         </div>
     )
