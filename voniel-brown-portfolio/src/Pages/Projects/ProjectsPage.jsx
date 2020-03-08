@@ -6,16 +6,29 @@ const Portfolio = () => {
 
     const projects = [
         {
-            title: 'fwr'
+            title: `fwr`,
+            description: `hello`,
+            img_url: ``
         },
         {
-            title: 'fwrfgw'
+            title: `fwrfgw`,
+            description: `just`,
+            img_url: ``
         },
         {
-            title: 'fwrdfqd'
+            title: `fwrdfqd`,
+            description: `a`,
+            img_url: ``
         },
         {
-            title: 'fwrdgq'
+            title: `fwrdgq`,
+            description: `mellow`,
+            img_url: ``
+        },
+        {
+            title: `fwrdgqdefq`,
+            description: `fellow`,
+            img_url: ``
         }
     ]
 
@@ -25,7 +38,9 @@ const Portfolio = () => {
                 {
                     projects.map(project => {
                         return <Link to={`/project/${project.title}`} className='project-card' key={project}>
-                            {project.title}
+                            <p>{project.title}</p>
+                            <p>{project.description}</p>
+                            <p>{project.img_url}</p>
                         </Link>
                     })
                 }

@@ -3,7 +3,7 @@ import Home from '../../Pages/Home/HomePage'
 import About from '../../Pages/About/BioPage'
 import { NavBar } from '../Navigation/Navbar'
 import { Footer } from '../Navigation/Footer'
-import Portfolio from '../../Pages/Projects/PortfolioPage'
+import Portfolio from '../../Pages/Projects/ProjectsPage'
 import Contact from '../../Pages/Contact/Contact'
 import { Element, animateScroll as scroll, scroller } from 'react-scroll'
 // import { Switch, Route } from 'react-router-dom'
@@ -29,8 +29,8 @@ class Landing extends Component {
                 <NavBar scrollTo={this.scrollTo} />
                 <Element name='home'>
                     <Home />
+                    <button name='portfolio ' className='button-theme' onClick={this.scrollTo}>\/</button>
                 </Element>
-                <button name='portfolio ' className='button-theme' onClick={this.scrollTo}>\/</button>
                 <Element name='portfolio'>
                     <Portfolio />
                 </Element>
