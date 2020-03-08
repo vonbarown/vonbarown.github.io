@@ -5,26 +5,26 @@
 }
 
 .navbar {
-  top: 10px;
+  top: 0;
   left: 0;
-  gap: 50%;
+  gap: 5%;
   z-index: 90;
-  height: 90px;
-  width: 100vw;
+  height: 900px;
+  width: 15vw;
   padding: 30px;
   display: flex;
   align-items: center;
-  position: sticky;
+  position: fixed;
   flex-direction: column;
   align-items: flex-start;
-  background-color: transparent;
+  background-color: lightblue;
 }
 
 .navItems {
   left: 0;
   gap: 30px;
   display: flex;
-  margin-top: 20px;
+  /* margin-top: 20px; */
   padding-left: 15px;
   flex-direction: column;
 }
@@ -61,16 +61,16 @@
   text-decoration: none;
 }
 
-/* @media screen and (max-width: 600px) {
-  .navbar button {
-    display: none;
-  }
-  .navbar a.icon {
-    float: right;
-    display: block;
-  }
+.github {
+  color: black;
 }
 
+/* @media screen and (max-width: 600px) {
+  .navbar .navItems {
+    width: 10vw;
+  }
+} */
+/*
 @media screen and (max-width: 600px) {
   .navbar.responsive {
     position: relative;
@@ -105,4 +105,15 @@
   width: 100%;
   height: 2px;
   background-color: white;
+}
+
+.side-drawer {
+  height: 100%;
+  background-color: white;
+  box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 15vw;
+  z-index: 200;
 }

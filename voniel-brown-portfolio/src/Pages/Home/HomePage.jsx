@@ -14,12 +14,12 @@ const Home = () => {
     return (
         <div className='homePage'>
             {
-                // <div className="container" onMouseMove={({ clientX: x, clientY: y }) => set({ xy: calc(x, y) })}>
-                //     <animated.div className="card1" style={{ transform: props.xy.interpolate(trans1) }} />
-                //     <animated.div className="card2" style={{ transform: props.xy.interpolate(trans2) }} />
-                //     <animated.div className="card3" style={{ transform: props.xy.interpolate(trans3) }} />
-                //     <animated.div className="card4" style={{ transform: props.xy.interpolate(trans4) }} />
-                // </div>
+                <div className="container" onMouseMove={({ clientX: x, clientY: y }) => set({ xy: calc(x, y) })}>
+                    <animated.div className="card1" style={{ transform: props.xy.interpolate(trans1) }} />
+                    <animated.div className="card2" style={{ transform: props.xy.interpolate(trans2) }} />
+                    <animated.div className="card3" style={{ transform: props.xy.interpolate(trans3) }} />
+                    <animated.div className="card4" style={{ transform: props.xy.interpolate(trans4) }} />
+                </div>
             }
         </div>
     )

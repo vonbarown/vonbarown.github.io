@@ -61,7 +61,7 @@ body {
 }
 
 .homePage {
-  height: 83vh;
+  height: inherit;
   display: flex;
   flex-direction: column;
   width: 100vw;
