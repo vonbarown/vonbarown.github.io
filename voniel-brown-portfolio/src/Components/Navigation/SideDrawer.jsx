@@ -8,10 +8,7 @@ import { DrawerToggleButton } from './DrawerToggle'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import './navigation.css'
 
-
-import './navigation.css'
-
-export const SideDrawer = (props) => {
+export const SideDrawer = ({ scrollTo }) => {
     const [theme, toggleTheme, componentMounted] = useDarkMode();
     const themeMode = theme === 'light' ? lightTheme : darkTheme;
 
@@ -25,9 +22,7 @@ export const SideDrawer = (props) => {
                 <GlobalStyles />
             </ThemeProvider >
             <h2 className='Voniel-Brown'>Voniel Brown</h2>
-            <div>
-                <DrawerToggleButton />
-            </div>
+
             <div className='external-links'>
                 <a href="https://github.com/vonbarown">
                     <FontAwesomeIcon className='fa-icon github' icon={['fab', 'github']} />
@@ -37,10 +32,10 @@ export const SideDrawer = (props) => {
                 </a>
             </div>
             <div className='navItems'>
-                <button className='nav-button' onClick={props.scrollTo} name='home'>Home</button>
-                <button className='nav-button' onClick={props.scrollTo} name='about'>About</button>
-                <button className='nav-button' onClick={props.scrollTo} name='portfolio'>Projects</button>
-                <button className='nav-button' onClick={props.scrollTo} name='contact' >Contact</button>
+                <button className='nav-button' onClick={scrollTo} name='home'>Home</button>
+                <button className='nav-button' onClick={scrollTo} name='about'>About</button>
+                <button className='nav-button' onClick={scrollTo} name='portfolio'>Projects</button>
+                <button className='nav-button' onClick={scrollTo} name='contact' >Contact</button>
             </div>
 
             <div className='toggleButton'>

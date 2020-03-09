@@ -9,7 +9,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import './navigation.css'
 
 
-export const NavBar = (props) => {
+export const NavBar = ({ scrollTo }) => {
 
     const [theme, toggleTheme, componentMounted] = useDarkMode();
     const themeMode = theme === 'light' ? lightTheme : darkTheme;
@@ -39,10 +39,10 @@ export const NavBar = (props) => {
             </div>
 
             <div className='navItems'>
-                <button className='nav-button' onClick={props.scrollTo} name='home'>Home</button>
-                <button className='nav-button' onClick={props.scrollTo} name='about'>About</button>
-                <button className='nav-button' onClick={props.scrollTo} name='portfolio'>Projects</button>
-                <button className='nav-button' onClick={props.scrollTo} name='contact' >Contact</button>
+                <button className='nav-button' onClick={scrollTo} name='home'>Home</button>
+                <button className='nav-button' onClick={scrollTo} name='about'>About</button>
+                <button className='nav-button' onClick={scrollTo} name='portfolio'>Projects</button>
+                <button className='nav-button' onClick={scrollTo} name='contact' >Contact</button>
             </div>
 
             <div className='toggleButton'>

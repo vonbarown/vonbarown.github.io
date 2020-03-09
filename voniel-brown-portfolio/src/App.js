@@ -7,8 +7,7 @@ import Landing from './Components/Landing/Landing'
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 import { faCheckSquare, faCoffee } from '@fortawesome/free-solid-svg-icons'
-import { SideDrawer } from './Components/Navigation/SideDrawer';
-import { Backdrop } from './Components/Navigation/Backdrop/Backdrop'
+
 library.add(faGithub, faLinkedin, faCheckSquare, faCoffee)
 
 function App() {
@@ -21,9 +20,6 @@ function App() {
 
   return (
     <div className="App">
-
-      <SideDrawer />
-      <Backdrop />
       <ThemeProvider theme={themeMode}>
         <Landing />
       </ThemeProvider>
