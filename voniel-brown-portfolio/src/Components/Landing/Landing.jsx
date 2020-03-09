@@ -24,28 +24,31 @@ class Landing extends Component {
             smooth: 'easeInOutQuart'
         })
     }
-    drawerToggleClick = () => {
+    drawerToggler = () => {
         this.setState((prevState) => {
             return { sideDrawerOpen: !prevState.sideDrawerOpen }
+        })
+    }
 
+    backDropClick = () => {
+        this.setState({
+            sideDrawerOpen: false
         })
     }
 
     render() {
-        let sidebar;
         let backDrop;
 
         if (this.state.sideDrawerOpen) {
-            sidebar = <SideDrawer scrollTo={this.scrollTo} />;
-            backDrop = <Backdrop />
+            backDrop = <Backdrop clicked={this.backDropClick} />
 
         }
 
         return (
             <div className='landing'>
-                {sidebar}
+                <SideDrawer scrollTo={this.scrollTo} show={this.state.sideDrawerOpen} />;
                 {backDrop}
-                <NavBar scrollTo={this.scrollTo} />
+                <NavBar scrollTo={this.scrollTo} drawerClick={this.drawerToggler} />
                 <Element name='home' className='homePage'>
                     <Home />
                     <button name='portfolio ' className='button-theme' onClick={this.scrollTo}>\/</button>

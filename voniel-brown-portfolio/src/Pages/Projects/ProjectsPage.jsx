@@ -55,7 +55,7 @@ const Portfolio = () => {
             <div className='inner-frame'>
                 <div className='flex'>
                     {
-                        projects.map(project => <ProjectCard project={project} />)
+                        projects.map(project => <ProjectCard project={project} key={project.title} />)
                     }
                 </div>
             </div>
