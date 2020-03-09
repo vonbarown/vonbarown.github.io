@@ -15,10 +15,10 @@ export const SideDrawer = ({ scrollTo, show }) => {
         return <div />
     }
 
-    let drawerClassNames = ['side-drawer navbar']
+    let drawerClassNames = ['side-drawer']
 
     if (show) {
-        drawerClassNames = ['side-drawer open']
+        drawerClassNames = ' open'
     }
 
     return (

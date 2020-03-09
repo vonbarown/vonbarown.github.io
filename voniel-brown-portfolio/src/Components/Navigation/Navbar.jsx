@@ -23,12 +23,12 @@ export const NavBar = ({ scrollTo, drawerClick }) => {
             <ThemeProvider theme={themeMode} >
                 <GlobalStyles />
             </ThemeProvider >
-            <h2 className='Voniel-Brown'>Voniel Brown</h2>
             {
                 <div className='sidebar-toggle-button'>
                     <DrawerToggleButton click={drawerClick} />
                 </div>
             }
+            <h2 className='Voniel-Brown'>Voniel Brown</h2>
             <div className='navigation-items'>
                 <div className='external-links'>
                     <a href="https://github.com/vonbarown">

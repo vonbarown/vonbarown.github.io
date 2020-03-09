@@ -46,7 +46,7 @@ class Landing extends Component {
 
         return (
             <div className='landing'>
-                <SideDrawer scrollTo={this.scrollTo} show={this.state.sideDrawerOpen} />;
+                <SideDrawer scrollTo={this.scrollTo} show={this.state.sideDrawerOpen} />
                 {backDrop}
                 <NavBar scrollTo={this.scrollTo} drawerClick={this.drawerToggler} />
                 <Element name='home' className='homePage'>
