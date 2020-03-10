@@ -12,7 +12,8 @@ import './Landing.css'
 
 class Landing extends Component {
     state = {
-        sideDrawerOpen: false
+        sideDrawerOpen: false,
+        darkMode: false
     }
 
     scrollToTop = () => scroll.scrollToTop();
@@ -36,6 +37,13 @@ class Landing extends Component {
         })
     }
 
+    handleThemeToggle = (e) => {
+        this.setState({ darkMode: e.target.checked })
+        if (e.target.checked) {
+            document.body.style = 'background  black'
+        }
+    }
+
     render() {
         let backDrop;
 
@@ -45,10 +53,19 @@ class Landing extends Component {
         }
 
         return (
-            <div className='landing'>
+            <div className={
+                this.state.darkMode
+                    ? 'landing darkMode'
+                    : 'landing'
+            }>
                 <SideDrawer scrollTo={this.scrollTo} show={this.state.sideDrawerOpen} />
                 {backDrop}
-                <NavBar scrollTo={this.scrollTo} drawerClick={this.drawerToggler} />
+                <NavBar
+                    scrollTo={this.scrollTo}
+                    drawerClick={this.drawerToggler}
+                    darkMode={this.state.darkMode}
+                    handleThemeToggle={this.handleThemeToggle}
+                />
                 <Element name='home' className='homePage'>
                     <Home />
                     <button name='portfolio ' className='button-theme' onClick={this.scrollTo}>\/</button>

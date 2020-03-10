@@ -9,7 +9,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import './navigation.css'
 
 
-export const NavBar = ({ scrollTo, drawerClick }) => {
+export const NavBar = ({ scrollTo, drawerClick, darkMode, handleThemeToggle }) => {
 
     const [theme, toggleTheme, componentMounted] = useDarkMode();
     const themeMode = theme === 'light' ? lightTheme : darkTheme;
@@ -48,6 +48,8 @@ export const NavBar = ({ scrollTo, drawerClick }) => {
 
                 <div className='toggleButton'>
                     Change Theme <Toggle theme={theme} toggleTheme={toggleTheme} />
+                    <button onClick={handleThemeToggle}>Toggle</button>
+                    <input onChange={handleThemeToggle} type="checkbox" />
                 </div>
 
             </div>
