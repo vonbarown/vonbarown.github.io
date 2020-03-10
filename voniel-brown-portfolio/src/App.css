@@ -36,3 +36,36 @@
     transform: rotate(360deg);
   }
 }
+.landing {
+  position: relative;
+  min-height: 100vh;
+  /* display: flex;
+  flex-direction: column;
+  align-items: center; */
+  width: 100vw;
+}
+
+.scrollToTop {
+  top: -90px;
+  left: 90vw;
+  z-index: 100;
+  display: flex;
+  position: sticky;
+}
+
+/* .darkMode {
+  background-color: black;
+} */
+
+html .darkMode {
+  background-color: black;
+}
+
+.App.darkMode {
+  /* font-family: 'Open Sans', sans-serif; */
+  background-color: black;
+  -webkit-transition: 0.5s ease;
+  -o-transition: 0.5s ease;
+  transition: 0.5s ease;
+  color: white;
+}

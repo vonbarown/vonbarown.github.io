@@ -1,8 +1,4 @@
 import React from 'react'
-import { ThemeProvider } from 'styled-components'
-import { lightTheme, darkTheme } from '../../Theme/Theme'
-import { GlobalStyles } from '../../Theme/Global'
-import Toggle from '../../Theme/Toggle'
 import { useDarkMode } from '../../Theme/UseDarkMode'
 import { DrawerToggleButton } from './DrawerToggle'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -11,23 +7,11 @@ import './navigation.css'
 
 export const NavBar = ({ scrollTo, drawerClick, darkMode, handleThemeToggle }) => {
 
-    const [theme, toggleTheme, componentMounted] = useDarkMode();
-    const themeMode = theme === 'light' ? lightTheme : darkTheme;
-
-    if (!componentMounted) {
-        return <div />
-    }
-
     return (
         <div className='navbar'>
-            <ThemeProvider theme={themeMode} >
-                <GlobalStyles />
-            </ThemeProvider >
-            {
-                <div className='sidebar-toggle-button'>
-                    <DrawerToggleButton click={drawerClick} />
-                </div>
-            }
+            <div className='sidebar-toggle-button'>
+                <DrawerToggleButton click={drawerClick} />
+            </div>
             <h2 className='Voniel-Brown'>Voniel Brown</h2>
             <div className='navigation-items'>
                 <div className='external-links'>
@@ -47,8 +31,6 @@ export const NavBar = ({ scrollTo, drawerClick, darkMode, handleThemeToggle }) =
                 </div>
 
                 <div className='toggleButton'>
-                    Change Theme <Toggle theme={theme} toggleTheme={toggleTheme} />
-                    <button onClick={handleThemeToggle}>Toggle</button>
                     <input onChange={handleThemeToggle} type="checkbox" />
                 </div>
 
