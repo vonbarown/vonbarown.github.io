@@ -69,3 +69,18 @@ html .darkMode {
   transition: 0.5s ease;
   color: white;
 }
+
+.darkMode div {
+  color: white;
+}
+
+.darkMode button {
+  color: white;
+}
+.darkMode .project-card {
+  background-color: black;
+  border-color: white;
+}
+.darkMode .open {
+  background-color: black;
+}

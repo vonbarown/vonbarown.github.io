@@ -1,5 +1,4 @@
 import React from 'react'
-import { useDarkMode } from '../../Theme/UseDarkMode'
 import { DrawerToggleButton } from './DrawerToggle'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import './navigation.css'

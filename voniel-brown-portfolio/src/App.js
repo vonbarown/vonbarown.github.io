@@ -68,7 +68,12 @@ class Landing extends Component {
                     ? 'landing darkMode'
                     : 'landing'
             }>
-                <SideDrawer scrollTo={this.scrollTo} show={this.state.sideDrawerOpen} />
+                <SideDrawer
+                    scrollTo={this.scrollTo}
+                    show={this.state.sideDrawerOpen}
+                    darkMode={this.state.darkMode}
+                    handleThemeToggle={this.handleThemeToggle}
+                />
                 {backDrop}
                 <NavBar
                     scrollTo={this.scrollTo}
