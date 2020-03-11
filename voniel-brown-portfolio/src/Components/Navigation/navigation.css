@@ -167,7 +167,7 @@
   content: "Yes";
   text-transform: uppercase;
   padding-left: 10px;
-  background-color: #f90;
+  background-color: black;
   color: #fff;
 }
 .toggle-switch-disabled {
@@ -182,7 +182,7 @@
   content: "No";
   text-transform: uppercase;
   padding-right: 10px;
-  background-color: #ccc;
+  background-color: #f90;
   color: #fff;
   text-align: right;
 }
