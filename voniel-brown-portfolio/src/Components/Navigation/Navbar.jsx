@@ -1,13 +1,18 @@
 import React from 'react'
 import { DrawerToggleButton } from './DrawerToggle'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { ToggleSwitch } from './ToggleSwitch'
 import './navigation.css'
 
 
-export const NavBar = ({ scrollTo, drawerClick, darkMode, handleThemeToggle }) => {
+export const NavBar = ({ sideDrawerOpen, scrollTo, drawerClick, darkMode, handleThemeToggle }) => {
 
     return (
-        <div className='navbar'>
+        <div className={
+            sideDrawerOpen
+                ? 'navbar-hidden'
+                : 'navbar'
+        }>
             <div className='sidebar-toggle-button'>
                 <DrawerToggleButton click={drawerClick} />
             </div>
@@ -19,11 +24,12 @@ export const NavBar = ({ scrollTo, drawerClick, darkMode, handleThemeToggle }) =
                     <button className='nav-button' onClick={scrollTo} name='about'>About</button>
                     <button className='nav-button' onClick={scrollTo} name='portfolio'>Projects</button>
                     <button className='nav-button' onClick={scrollTo} name='contact' >Contact</button>
+                    <br />
+                </div>
+                <div className='toggleButton'>
+                    <ToggleSwitch handleThemeToggle={handleThemeToggle} />
                 </div>
 
-                <div className='toggleButton'>
-                    <input onChange={handleThemeToggle} type="checkbox" />
-                </div>
 
                 <div className='external-links'>
                     <a href="https://github.com/vonbarown">

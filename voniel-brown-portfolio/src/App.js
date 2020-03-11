@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import Home from './Pages/Home/HomePage'
 import About from './Pages/About/BioPage'
 import { NavBar } from './Components/Navigation/Navbar'
-import { Footer } from './Components/Navigation/Footer'
+// import { Footer } from './Components/Navigation/Footer'
 import Portfolio from './Pages/Projects/ProjectsPage'
 import Contact from './Pages/Contact/Contact'
 import { Element, animateScroll as scroll, scroller } from 'react-scroll'
@@ -76,6 +76,7 @@ class Landing extends Component {
                 />
                 {backDrop}
                 <NavBar
+                    sideDrawerOpen={this.state.sideDrawerOpen}
                     scrollTo={this.scrollTo}
                     drawerClick={this.drawerToggler}
                     darkMode={this.state.darkMode}
@@ -95,7 +96,10 @@ class Landing extends Component {
                     <Contact />
                 </Element>
                 <button className='scrollToTop button-theme' onClick={this.scrollToTop}>Scroll Up</button>
-                <Footer />
+                {
+
+                    // <Footer />
+                }
             </div >
         )
     }
