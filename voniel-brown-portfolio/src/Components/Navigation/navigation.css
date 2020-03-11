@@ -16,7 +16,8 @@
   align-items: center;
   position: fixed;
   flex-direction: column;
-  background-color: lightblue;
+  /* background-color: lightblue; */
+  background-image: linear-gradient(lightblue, rgba(173, 216, 230, 0));
 }
 
 .nav-buttons {

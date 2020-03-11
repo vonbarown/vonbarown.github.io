@@ -7,7 +7,9 @@ const Portfolio = () => {
     const projects = [
         {
             title: `Synergie`,
-            description: `hello`,
+            description: `Synergie is a full-stack react app, that allows users to keep track of their favorite shows.
+                        Allowing users to plan their binging sessions with their friends.We know that life can be busy, now you can keep track of the
+                        shows that you love.`,
             img_url: ``,
             live: '',
             repo: ''

@@ -13,14 +13,6 @@ export const NavBar = ({ scrollTo, drawerClick, darkMode, handleThemeToggle }) =
             </div>
             <h2 className='Voniel-Brown'>Voniel Brown</h2>
             <div className='navigation-items'>
-                <div className='external-links'>
-                    <a href="https://github.com/vonbarown">
-                        <FontAwesomeIcon className='fa-icon github' icon={['fab', 'github']} />
-                    </a>
-                    <a href="https://www.linkedin.com/in/vonielbrown/">
-                        <FontAwesomeIcon className='fa-icon linked-in' icon={['fab', 'linkedin']} />
-                    </a>
-                </div>
 
                 <div className='nav-buttons'>
                     <button className='nav-button' onClick={scrollTo} name='home'>Home</button>
@@ -31,6 +23,15 @@ export const NavBar = ({ scrollTo, drawerClick, darkMode, handleThemeToggle }) =
 
                 <div className='toggleButton'>
                     <input onChange={handleThemeToggle} type="checkbox" />
+                </div>
+
+                <div className='external-links'>
+                    <a href="https://github.com/vonbarown">
+                        <FontAwesomeIcon className='fa-icon github' icon={['fab', 'github']} />
+                    </a>
+                    <a href="https://www.linkedin.com/in/vonielbrown/">
+                        <FontAwesomeIcon className='fa-icon linked-in' icon={['fab', 'linkedin']} />
+                    </a>
                 </div>
 
             </div>
