@@ -1,0 +1,13 @@
+.portfolioPage {
+  height: 100vh;
+  width: 100vw;
+}
+
+/* @media only screen and (max-width: 600px) {
+  .portfolioPage {
+    width: 10vw;
+    gap: 5px;
+    padding-left: 0px;
+    background-color: black;
+  }
+} */
