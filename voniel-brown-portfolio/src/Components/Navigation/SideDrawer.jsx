@@ -1,19 +1,9 @@
 import React from 'react'
-import { ThemeProvider } from 'styled-components'
-import { lightTheme, darkTheme } from '../../Theme/Theme'
-import { GlobalStyles } from '../../Theme/Global'
-import Toggle from '../../Theme/Toggle'
-import { useDarkMode } from '../../Theme/UseDarkMode'
+
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import './navigation.css'
 
-export const SideDrawer = ({ scrollTo, show }) => {
-    const [theme, toggleTheme, componentMounted] = useDarkMode();
-    const themeMode = theme === 'light' ? lightTheme : darkTheme;
-
-    if (!componentMounted) {
-        return <div />
-    }
+export const SideDrawer = ({ scrollTo, show, darkMode, handleThemeToggle }) => {
 
     let drawerClassNames = ['side-drawer']
 
@@ -23,11 +13,6 @@ export const SideDrawer = ({ scrollTo, show }) => {
 
     return (
         <div className={drawerClassNames}>
-            <ThemeProvider theme={themeMode} >
-                <GlobalStyles />
-            </ThemeProvider >
-            <h2 className='Voniel-Brown'>Voniel Brown</h2>
-
             <div className='external-links'>
                 <a href="https://github.com/vonbarown">
                     <FontAwesomeIcon className='fa-icon github' icon={['fab', 'github']} />
@@ -44,10 +29,8 @@ export const SideDrawer = ({ scrollTo, show }) => {
             </div>
 
             <div className='toggleButton'>
-                Change Theme <Toggle theme={theme} toggleTheme={toggleTheme} />
+                <input onChange={handleThemeToggle} type="checkbox" />
             </div>
-
-
         </div>
     )
 }
