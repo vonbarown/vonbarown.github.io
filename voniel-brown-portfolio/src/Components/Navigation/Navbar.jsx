@@ -27,7 +27,7 @@ export const NavBar = ({ sideDrawerOpen, scrollTo, drawerClick, darkMode, handle
                     <br />
                 </div>
                 <div className='toggleButton'>
-                    <ToggleSwitch handleThemeToggle={handleThemeToggle} />
+                    <ToggleSwitch handleThemeToggle={handleThemeToggle} name={'toggleSwitch'} id={'toggleSwitch'} />
                 </div>
 
 

@@ -1,13 +1,13 @@
 import React from "react";
 
-export const ToggleSwitch = ({ handleThemeToggle }) => {
+export const ToggleSwitch = ({ handleThemeToggle, name, id }) => {
     return (
         <div className="toggle-switch">
             <input
                 type="checkbox"
                 className="toggle-switch-checkbox"
-                name="toggleSwitch"
-                id="toggleSwitch"
+                name={name}
+                id={id}
                 onClick={handleThemeToggle}
             />
             <label className="toggle-switch-label" htmlFor="toggleSwitch">
