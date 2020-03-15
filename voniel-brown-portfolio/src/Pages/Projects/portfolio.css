@@ -34,14 +34,17 @@
 }
 
 @media only screen and (max-width: 800px) {
-  .flex {
+  .portfolioPage {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: flex-start;
     gap: 20px;
-    height: 800px;
+    overflow-y: scroll;
+    width: 100vw;
   }
 
-  .project-card {
-    width: 30vw;
+  #project-card {
+    width: 55vw;
+    height: 350px;
   }
 }
