@@ -8,6 +8,13 @@ const About = () => {
             <div className='page-title'>
                 <h2>About</h2>
             </div>
+            {
+                <img
+                    src="https://avatars2.githubusercontent.com/u/52142269?s=460&v=4"
+                    alt="Voniel Brown"
+                    className='Voniel'
+                />
+            }
             <div className='container'>
                 <div className='content'>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Massa id neque aliquam vestibulum morbi blandit cursus risus.
@@ -16,13 +23,7 @@ const About = () => {
                     Tellus orci ac auctor augue mauris. Iaculis eu non diam phasellus vestibulum lorem. Volutpat est velit egestas dui id ornare arcu odio.
                     A lacus vestibulum sed arcu non odio euismod lacinia at. Ac tortor vitae purus faucibus ornare suspendisse sed nisi lacus. Velit laoreet id donec ultrices tincidunt.
                 </div>
-                {
-                    //     <img
-                    //     src="https://avatars2.githubusercontent.com/u/52142269?s=460&v=4"
-                    //     alt="Voniel Brown"
-                    //     className='Voniel'
-                    // />
-                }
+
             </div>
         </div>
     )
