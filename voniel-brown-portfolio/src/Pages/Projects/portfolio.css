@@ -23,7 +23,7 @@
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 .project-card:hover {
-  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 8px 16px 0 rgba(0.3, 0.3, 0.3, 0.3);
 }
 
 .portfolioPage .flex {
@@ -35,20 +35,23 @@
 
 @media only screen and (max-width: 800px) {
   .portfolioPage {
+    gap: 20px;
+    width: 100vw;
     display: flex;
+    overflow-y: scroll;
     flex-direction: row;
     justify-content: flex-start;
-    gap: 20px;
-    overflow-y: scroll;
-    width: 100vw;
   }
-  /* .flex {
-    padding-right: 50px;
-  } */
 
   #project-card {
     margin-right: 5px;
     width: 55vw;
     height: 350px;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .portfolioPage .flex {
+    flex-wrap: wrap;
   }
 }

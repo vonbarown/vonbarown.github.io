@@ -1,76 +1,19 @@
-.contact {
-  display: flex;
-  flex-direction: column;
-  max-width: 40vw;
-  gap: 50px;
-  position: relative;
-}
 .contactPage {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  gap: 200px;
   height: 100vh;
   width: 100vw;
-}
-.contactPage-formField {
-  padding: 60px;
-  border-radius: 5px;
-  align-items: center;
-  /* box-shadow: 0 3px 10px 2px darkslateblue; */
-  display: inline;
-}
-
-input,
-#message {
-  width: 100%;
-  height: 50px;
-}
-
-.inputField {
   display: flex;
+  align-items: center;
   flex-direction: column;
-  align-items: flex-start;
-  font-size: 20px;
+  justify-content: center;
 }
-.button-theme {
-  height: 40px;
-  width: 80px;
-  border-radius: 5px;
-  color: white;
-  background-color: #347cfb;
-  margin-bottom: 10px;
-  font-size: 15px;
-  /* position: relative; */
-}
+
 .submit {
-  width: 40vw;
-  background-color: teal;
-}
-
-.inputBar {
+  bottom: 0;
+  width: 9vw;
   height: 30px;
-  max-width: 40vw;
-  font-size: 18px;
-}
-
-.contact-input {
-  background-color: transparent;
-  border: transparent;
-  border-bottom: 2px solid black;
   font-size: 20px;
-}
-
-.text-area {
-  min-height: 90px;
-  max-width: 40vw;
-}
-.nav-button {
-  background-color: transparent;
-  border: transparent;
-  font-size: 15px;
-}
-
-.nav-button:hover {
-  color: teal;
+  color: aliceblue;
+  border-radius: 5px;
+  background: linear-gradient(145deg, #2e7670, #378c85);
 }

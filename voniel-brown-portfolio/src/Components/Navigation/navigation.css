@@ -95,6 +95,14 @@
   }
 }
 
+.nav-button:hover {
+  color: teal;
+}
+.nav-button {
+  background-color: transparent;
+  border: transparent;
+  font-size: 15px;
+}
 /*
 @media screen and (max-width: 600px) {
   .navbar.responsive {

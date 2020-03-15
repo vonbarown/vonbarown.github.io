@@ -58,7 +58,8 @@
   background-color: black;
 } */
 
-html .darkMode {
+body,
+.darkMode {
   background-color: black;
 }
 
@@ -84,4 +85,17 @@ html .darkMode {
 }
 .darkMode .open {
   background-color: black;
+}
+.button-theme {
+  height: 40px;
+  width: 80px;
+  border-radius: 5px;
+  color: white;
+  background-color: #347cfb;
+  margin-bottom: 10px;
+  font-size: 15px;
+}
+
+button {
+  border: 1px transparent;
 }

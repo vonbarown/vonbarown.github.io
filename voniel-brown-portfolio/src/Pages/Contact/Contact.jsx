@@ -8,16 +8,14 @@ const Contact = () => {
 
   return (
     <div className="contactPage">
-      <div className="contactPage-formField">
-        <div className="skills-component-contact">
-          <Skills />
-        </div>
+      <div className="skills-component-contact">
+        <Skills />
+      </div>
 
-        <div className="contact-btn-container">
-          <button className="submit button-theme" onClick={handleButtonClick}>
-            Contact Me
-          </button>
-        </div>
+      <div className="contact-btn-container">
+        <button className="submit" onClick={handleButtonClick}>
+          Contact Me
+        </button>
       </div>
     </div>
   );
