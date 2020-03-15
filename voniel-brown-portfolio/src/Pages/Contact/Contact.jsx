@@ -14,7 +14,7 @@ const Contact = () => {
 
       <div className="contact-btn-container">
         <button className="submit" onClick={handleButtonClick}>
-          Contact Me
+          Contact
         </button>
       </div>
     </div>

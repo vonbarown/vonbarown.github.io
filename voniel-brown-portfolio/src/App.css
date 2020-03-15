@@ -1,6 +1,12 @@
 .App {
   text-align: center;
   width: 100vw;
+  position: relative;
+  min-height: 100vh;
+  /* display: flex;
+  flex-direction: column;
+  align-items: center; */
+  width: 100vw;
 }
 
 .App-logo {
@@ -37,14 +43,6 @@
     transform: rotate(360deg);
   }
 }
-.landing {
-  position: relative;
-  min-height: 100vh;
-  /* display: flex;
-  flex-direction: column;
-  align-items: center; */
-  width: 100vw;
-}
 
 .scrollToTop {
   top: -90px;
@@ -54,16 +52,15 @@
   position: sticky;
 }
 
-/* .darkMode {
-  background-color: black;
-} */
-
-body,
-.darkMode {
+.darkMode .navbar {
   background-color: black;
 }
 
-.App.darkMode {
+html .darkMode {
+  background-color: black;
+}
+
+.darkMode {
   /* font-family: 'Open Sans', sans-serif; */
   background-color: black;
   -webkit-transition: 0.5s ease;

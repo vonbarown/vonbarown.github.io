@@ -10,10 +10,18 @@
 
 .submit {
   bottom: 0;
-  width: 9vw;
+  width: 100px;
   height: 30px;
   font-size: 20px;
   color: aliceblue;
   border-radius: 5px;
   background: linear-gradient(145deg, #2e7670, #378c85);
+}
+
+.skills-container {
+  display: flex;
+}
+
+.skill-icon {
+  display: ;
 }

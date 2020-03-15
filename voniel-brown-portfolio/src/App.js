@@ -11,10 +11,17 @@ import { Backdrop } from "./Components/Navigation/Backdrop/Backdrop";
 import "./App.css";
 
 import { library } from "@fortawesome/fontawesome-svg-core";
-import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
-import { faCheckSquare, faCoffee } from "@fortawesome/free-solid-svg-icons";
+import {
+  faGithub,
+  faLinkedin,
+  faReact,
+  faCss3Alt,
+  faHtml5,
+  faJs,
+  faGitAlt
+} from "@fortawesome/free-brands-svg-icons";
 
-library.add(faGithub, faLinkedin, faCheckSquare, faCoffee);
+library.add(faGithub, faLinkedin, faReact, faCss3Alt, faHtml5, faJs, faGitAlt);
 
 class Landing extends Component {
   state = {
@@ -60,7 +67,7 @@ class Landing extends Component {
     }
 
     return (
-      <div className={this.state.darkMode ? "landing darkMode" : "landing"}>
+      <div className={this.state.darkMode ? "landing darkMode" : "App"}>
         <SideDrawer
           scrollTo={this.scrollTo}
           show={this.state.sideDrawerOpen}
