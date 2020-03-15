@@ -42,8 +42,12 @@
     overflow-y: scroll;
     width: 100vw;
   }
+  /* .flex {
+    padding-right: 50px;
+  } */
 
   #project-card {
+    margin-right: 5px;
     width: 55vw;
     height: 350px;
   }
