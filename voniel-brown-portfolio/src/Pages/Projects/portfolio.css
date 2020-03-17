@@ -1,0 +1,62 @@
+.portfolioPage {
+  height: 100vh;
+  width: 100vw;
+  grid-gap: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid black;
+}
+
+.project-card {
+  width: 20vw;
+  height: 350px;
+  margin-left: 5px;
+  color: black;
+  padding: 16px;
+  text-align: center;
+  transition: 0.4s;
+  text-decoration: none;
+  border-radius: 5px;
+  border: 1px solid black;
+  background-color: #f1f1f1;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+.project-card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0.3, 0.3, 0.3, 0.3);
+}
+
+.portfolioPage .flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+@media only screen and (max-width: 800px) {
+  .portfolioPage {
+    gap: 20px;
+    width: 100vw;
+    display: flex;
+    overflow-y: scroll;
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+
+  #project-card {
+    margin-right: 5px;
+    width: 55vw;
+    height: 350px;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .portfolioPage .flex {
+    flex-wrap: wrap;
+  }
+}
+
+.project-img {
+  height: 120px;
+  width: 15rem;
+}

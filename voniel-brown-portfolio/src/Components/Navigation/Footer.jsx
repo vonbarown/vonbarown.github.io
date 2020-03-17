@@ -7,8 +7,8 @@ export const Footer = () => {
     return (
         <div className='footer'>
 
-            <a href="https://github.com/vonbarown"><FaGithub /></a>{' '}
-            <a href="https://www.linkedin.com/in/vonielbrown/"><FaLinkedin /></a>
+            <a className='footer-link' href="https://github.com/vonbarown"><FaGithub /></a>{' '}
+            <a className='footer-link' href="https://www.linkedin.com/in/vonielbrown/"><FaLinkedin /></a>
         </div>
     )
 }

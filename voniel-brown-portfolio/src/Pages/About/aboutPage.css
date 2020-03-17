@@ -1,4 +1,26 @@
 .aboutPage {
   height: 100vh;
   width: 100vw;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.content {
+  max-width: 500px;
+}
+
+.Voniel {
+  height: 20pc;
+  width: 20pc;
+  border-radius: 5px;
 }
