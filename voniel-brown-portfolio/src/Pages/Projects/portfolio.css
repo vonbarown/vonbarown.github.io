@@ -55,3 +55,8 @@
     flex-wrap: wrap;
   }
 }
+
+.project-img {
+  height: 120px;
+  width: 15rem;
+}

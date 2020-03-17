@@ -20,8 +20,18 @@
 
 .skills-container {
   display: flex;
+  gap: 30px;
 }
 
 .skill-icon {
-  display: ;
+  height: 90px;
+}
+
+/* .darkmode .skill-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+} */
+.postgres {
+  height: 90px;
 }

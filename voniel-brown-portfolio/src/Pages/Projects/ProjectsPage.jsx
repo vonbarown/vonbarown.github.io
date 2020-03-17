@@ -1,6 +1,7 @@
 import React from "react";
 import "./portfolio.css";
 import { ProjectCard } from "./projectCard";
+import synergie_landing from "../../assets/synergie-landing.png";
 
 const Portfolio = () => {
   const projects = [
@@ -9,7 +10,7 @@ const Portfolio = () => {
       description: `Synergie is a full-stack react app, that allows users to keep track of their favorite shows.
                         Allowing users to plan their binging sessions with their friends.We know that life can be busy, now you can keep track of the
                         shows that you love.`,
-      img_url: ``,
+      img_url: synergie_landing,
       live: "",
       repo: ""
     },
