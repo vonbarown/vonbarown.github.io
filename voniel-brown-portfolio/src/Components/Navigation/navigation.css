@@ -9,7 +9,7 @@
   left: 0;
   gap: 5%;
   z-index: 90;
-  height: 900px;
+  height: 505px;
   width: 7.3vw;
   padding: 30px;
   display: flex;
@@ -101,7 +101,8 @@
 .nav-button {
   background-color: transparent;
   border: transparent;
-  font-size: 15px;
+  font-size: 25px;
+  text-align: left;
 }
 /*
 @media screen and (max-width: 600px) {
