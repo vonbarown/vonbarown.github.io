@@ -50,6 +50,7 @@
   z-index: 100;
   display: flex;
   position: sticky;
+  align-items: center;
 }
 
 .darkMode .navbar {
@@ -88,11 +89,25 @@ html .darkMode {
   width: 80px;
   border-radius: 5px;
   color: white;
-  background-color: #347cfb;
   margin-bottom: 10px;
   font-size: 15px;
+  background-image: linear-gradient(
+    145deg,
+    rgb(46, 118, 112),
+    rgb(55, 140, 133)
+  );
 }
 
 button {
   border: 1px transparent;
+}
+.nav-scroll {
+  width: 40px;
+  border-radius: 50px;
+}
+
+.nav-scroll:hover {
+  /* border-radius: 150px; */
+  background: linear-gradient(145deg, #3787bc, #41a1e0);
+  box-shadow: 7px 7px 14px #3480b2, -7px -7px 14px #46adf0;
 }

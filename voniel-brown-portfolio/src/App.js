@@ -103,8 +103,8 @@ class Landing extends Component {
 
           {this.state.visible ? (
             <button
-              name="portfolio "
-              className="button-theme"
+              name="portfolio"
+              className="button-theme nav-scroll"
               onClick={this.scrollTo}
             >
               \/
@@ -120,8 +120,11 @@ class Landing extends Component {
         <Element name="contact">
           <Contact />
         </Element>
-        <button className="scrollToTop button-theme" onClick={this.scrollToTop}>
-          Scroll Up
+        <button
+          className="scrollToTop button-theme nav-scroll"
+          onClick={this.scrollToTop}
+        >
+          Top
         </button>
         {
           // <Footer />

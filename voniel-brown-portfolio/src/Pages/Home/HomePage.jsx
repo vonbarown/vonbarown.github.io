@@ -1,4 +1,5 @@
 import React from "react";
+import logo from "../../assets/logo.png";
 // import { useSpring, animated } from "react-spring";
 import "./homepage.css"; // // Icons made by Freepik from www.flaticon.com
 
@@ -16,6 +17,7 @@ const Home = () => {
   // }));
   return (
     <div className="homePage">
+      <img src={logo} alt="logo" className="logo" />
       <div className="intro">
         Hello, My Name is <h1>Voniel Brown</h1>
       </div>
