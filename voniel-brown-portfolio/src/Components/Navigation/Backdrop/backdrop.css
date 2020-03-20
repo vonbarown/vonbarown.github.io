@@ -18,6 +18,13 @@
   cursor: pointer;
   padding: 0;
 }
+
+.sidebar-toggle-button {
+  position: fixed;
+  left: 0;
+  z-index: 900;
+}
+
 .toggle-button:focus {
   outline: none;
 }

@@ -1,4 +1,5 @@
-.App {
+.App,
+.darkMode {
   text-align: center;
   width: 100vw;
   position: relative;
