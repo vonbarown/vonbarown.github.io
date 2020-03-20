@@ -1,4 +1,4 @@
-.card1,
+/* .card1,
 .card2,
 .card3,
 .card4 {
@@ -45,13 +45,20 @@
   display: flex;
   align-items: center;
   justify-content: center;
-}
+} */
 
 .homePage {
-  height: inherit;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   width: 100vw;
   align-items: center;
   justify-content: center;
+}
+
+.intro {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
 }

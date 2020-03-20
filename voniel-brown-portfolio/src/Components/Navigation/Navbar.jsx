@@ -41,7 +41,7 @@ export const NavBar = ({
             Projects
           </button>
           <button className="nav-button" onClick={scrollTo} name="contact">
-            Contact
+            Skills
           </button>
           <br />
         </div>
