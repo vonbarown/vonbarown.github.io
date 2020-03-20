@@ -26,8 +26,13 @@ library.add(faGithub, faLinkedin, faReact, faCss3Alt, faHtml5, faJs, faGitAlt);
 class Landing extends Component {
   state = {
     sideDrawerOpen: false,
-    darkMode: false
+    darkMode: false,
+    visible: true
   };
+
+  componentDidMount() {
+    window.addEventListener("scroll", this.handleScroll);
+  }
 
   scrollToTop = () => scroll.scrollToTop();
 
@@ -58,6 +63,17 @@ class Landing extends Component {
       document.body.style = "background: white; transition: 0.5s ease;";
     }
   };
+  handleScroll = () => {
+    const { prevScrollPos } = this.state;
+
+    const currentScrollPos = window.pageYOffset;
+    const visible = prevScrollPos > currentScrollPos;
+
+    this.setState({
+      prevScrollPos: currentScrollPos,
+      visible
+    });
+  };
 
   render() {
     let backDrop;
@@ -84,13 +100,16 @@ class Landing extends Component {
         />
         <Element name="home" className="homePage">
           <Home />
-          <button
-            name="portfolio "
-            className="button-theme"
-            onClick={this.scrollTo}
-          >
-            \/
-          </button>
+
+          {this.state.visible ? (
+            <button
+              name="portfolio "
+              className="button-theme"
+              onClick={this.scrollTo}
+            >
+              \/
+            </button>
+          ) : null}
         </Element>
         <Element name="portfolio">
           <Portfolio />
