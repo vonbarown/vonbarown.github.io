@@ -24,11 +24,15 @@ export const NavBar = ({
       <div className="sidebar-toggle-button">
         <DrawerToggleButton click={drawerClick} />
       </div>
-      <h2 className="Voniel-Brown">Voniel </h2>
       <div className="navigation-items">
         <div className="nav-buttons">
-          <button className="nav-button" onClick={scrollTo} name="home">
-            Home
+          <button
+            className="nav-button"
+            id="Voniel-Brown"
+            onClick={scrollTo}
+            name="home"
+          >
+            Voniel
           </button>
           <button className="nav-button" onClick={scrollTo} name="about">
             About
