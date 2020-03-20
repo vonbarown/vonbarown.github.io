@@ -1,26 +1,16 @@
 import React from "react";
 import { DrawerToggleButton } from "./DrawerToggle";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { ToggleSwitch } from "./ToggleSwitch";
 import "./navigation.css";
-
+import Toggle from "react-toggle";
 export const NavBar = ({
-  sideDrawerOpen,
   scrollTo,
   drawerClick,
   darkMode,
   handleThemeToggle
 }) => {
-  let minWin = document.body.clientWidth;
-  let class_name;
-  if (minWin < 800) {
-    class_name = "";
-  } else {
-    class_name = "navbar";
-  }
-  console.log(minWin);
   return (
-    <div className={sideDrawerOpen ? "navbar-hidden" : class_name}>
+    <div className="navbar">
       <div className="sidebar-toggle-button">
         <DrawerToggleButton click={drawerClick} />
       </div>
@@ -45,11 +35,12 @@ export const NavBar = ({
           </button>
           <br />
         </div>
-        <div className="toggleButton">
-          <ToggleSwitch
-            handleThemeToggle={handleThemeToggle}
-            name={"toggleSwitch"}
-            id={"toggleSwitch"}
+        <div className="theme-toggle-btn">
+          <label htmlFor="cheese-status">Theme</label>
+          <Toggle
+            id="cheese-status"
+            defaultChecked={darkMode}
+            onChange={handleThemeToggle}
           />
         </div>
 

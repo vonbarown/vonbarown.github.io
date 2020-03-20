@@ -1,7 +1,7 @@
 import React from "react";
-import { ToggleSwitch } from "./ToggleSwitch";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "./navigation.css";
+import Toggle from "react-toggle";
 
 export const SideDrawer = ({ scrollTo, show, darkMode, handleThemeToggle }) => {
   let drawerClassNames = ["side-drawer"];
@@ -42,10 +42,10 @@ export const SideDrawer = ({ scrollTo, show, darkMode, handleThemeToggle }) => {
       </div>
 
       <div className="toggleButton">
-        <ToggleSwitch
-          handleThemeToggle={handleThemeToggle}
-          name={"toggleSwitch"}
-          id={"toggleSwitch"}
+        <Toggle
+          id="cheese-status"
+          defaultChecked={darkMode}
+          onChange={handleThemeToggle}
         />
       </div>
     </div>
