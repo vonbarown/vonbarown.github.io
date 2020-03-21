@@ -104,7 +104,7 @@ class Landing extends Component {
           {visible ? (
             <button
               name="projects"
-              className="button-theme nav-scroll"
+              className="button-theme nav-scroll proj-scroll"
               onClick={this.scrollTo}
             >
               \/

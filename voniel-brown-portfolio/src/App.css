@@ -109,3 +109,8 @@ button {
   background: linear-gradient(145deg, #3787bc, #41a1e0);
   box-shadow: 7px 7px 14px #3480b2, -7px -7px 14px #46adf0;
 }
+
+.proj-scroll {
+  /* position: fixed; */
+  margin-bottom: 90px;
+}
