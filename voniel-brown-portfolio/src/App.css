@@ -46,16 +46,13 @@
 }
 
 .scrollToTop {
+  bottom: 90px;
   top: -90px;
   left: 90vw;
   z-index: 100;
   display: flex;
   position: sticky;
   align-items: center;
-}
-
-.darkMode .navbar {
-  background-color: black;
 }
 
 html .darkMode {
@@ -82,9 +79,9 @@ html .darkMode {
   background-color: black;
   border-color: white;
 }
-.darkMode .open {
+/* .darkMode .open {
   background-color: black;
-}
+} */
 .button-theme {
   height: 40px;
   width: 80px;

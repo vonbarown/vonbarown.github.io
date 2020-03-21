@@ -77,7 +77,7 @@ class Landing extends Component {
 
   render() {
     let backDrop;
-
+    const { visible } = this.state;
     if (this.state.sideDrawerOpen) {
       backDrop = <Backdrop clicked={this.backDropClick} />;
     }
@@ -101,7 +101,7 @@ class Landing extends Component {
         <Element name="home" className="homePage">
           <Home />
 
-          {this.state.visible ? (
+          {visible ? (
             <button
               name="projects"
               className="button-theme nav-scroll"
@@ -120,15 +120,16 @@ class Landing extends Component {
         <Element name="contact">
           <Contact />
         </Element>
-        <button
-          className="scrollToTop button-theme nav-scroll"
-          onClick={this.scrollToTop}
-        >
-          Top
-        </button>
-        {
-          // <Footer />
-        }
+
+        {// <Footer />
+        !visible ? (
+          <button
+            className="scrollToTop button-theme nav-scroll"
+            onClick={this.scrollToTop}
+          >
+            Top
+          </button>
+        ) : null}
       </div>
     );
   }

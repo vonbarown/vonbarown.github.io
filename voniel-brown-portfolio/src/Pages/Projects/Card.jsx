@@ -32,11 +32,9 @@ export const ProjectCard = ({ project: { title, description, img_url } }) => {
                 <div className="description">
                   <p>{description}</p>
                 </div>
-                <label
-                  for={title}
-                  className="button return"
-                  aria-hidden="true"
-                ></label>
+                <label for={title} className="button return" aria-hidden="true">
+                  Back
+                </label>
               </div>
             </div>
           </div>
