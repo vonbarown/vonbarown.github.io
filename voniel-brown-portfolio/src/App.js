@@ -20,8 +20,18 @@ import {
   faJs,
   faGitAlt
 } from "@fortawesome/free-brands-svg-icons";
+import { faArrowLeft } from "@fortawesome/free-solid-svg-icons";
 
-library.add(faGithub, faLinkedin, faReact, faCss3Alt, faHtml5, faJs, faGitAlt);
+library.add(
+  faGithub,
+  faLinkedin,
+  faReact,
+  faCss3Alt,
+  faHtml5,
+  faJs,
+  faGitAlt,
+  faArrowLeft
+);
 
 class Landing extends Component {
   state = {

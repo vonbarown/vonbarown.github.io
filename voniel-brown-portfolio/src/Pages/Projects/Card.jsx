@@ -1,5 +1,5 @@
 import React from "react";
-// import "./projects.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "./card.scss";
 
 export const ProjectCard = ({
@@ -38,7 +38,10 @@ export const ProjectCard = ({
                   <p>{description}</p>
                 </div>
                 <label for={title} className="button return" aria-hidden="true">
-                  Back
+                  <FontAwesomeIcon
+                    className="fas"
+                    icon={["fas", "arrow-left"]}
+                  />
                 </label>
               </div>
             </div>
