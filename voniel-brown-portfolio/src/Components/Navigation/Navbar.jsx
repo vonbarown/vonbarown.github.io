@@ -1,14 +1,10 @@
 import React from "react";
 import { DrawerToggleButton } from "./DrawerToggle";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "./navigation.css";
-import Toggle from "react-toggle";
-export const NavBar = ({
-  scrollTo,
-  drawerClick,
-  darkMode,
-  handleThemeToggle
-}) => {
+import pen from "../../assets/pen.svg";
+import project from "../../assets/project-management.svg";
+import about from "../../assets/about.svg";
+export const NavBar = ({ scrollTo, drawerClick }) => {
   return (
     <div className="navbar">
       <div className="sidebar-toggle-button">
@@ -22,40 +18,39 @@ export const NavBar = ({
             onClick={scrollTo}
             name="home"
           >
-            Voniel
+            VB
           </button>
-          <button className="nav-button" onClick={scrollTo} name="about">
-            About
+          <button className="nav-button">
+            <img
+              src={about}
+              alt="About"
+              onClick={scrollTo}
+              name="about"
+              className="nav-icon"
+              title="About"
+            />
           </button>
-          <button className="nav-button" onClick={scrollTo} name="projects">
-            Projects
+          <button className="nav-button">
+            <img
+              className="nav-icon"
+              src={project}
+              alt="Projects"
+              onClick={scrollTo}
+              name="projects"
+              title="Projects"
+            />
           </button>
-          <button className="nav-button" onClick={scrollTo} name="contact">
-            Skills
+          <button className="nav-button">
+            <img
+              className="nav-icon"
+              src={pen}
+              alt="Skills"
+              onClick={scrollTo}
+              name="contact"
+              title="Skills"
+            />
           </button>
           <br />
-        </div>
-        <div className="theme-toggle-btn">
-          <Toggle
-            id="cheese-status"
-            defaultChecked={darkMode}
-            onChange={handleThemeToggle}
-          />
-        </div>
-
-        <div className="external-links">
-          <a href="https://github.com/vonbarown">
-            <FontAwesomeIcon
-              className="fa-icon github"
-              icon={["fab", "github"]}
-            />
-          </a>
-          <a href="https://www.linkedin.com/in/vonielbrown/">
-            <FontAwesomeIcon
-              className="fa-icon linked-in"
-              icon={["fab", "linkedin"]}
-            />
-          </a>
         </div>
       </div>
     </div>

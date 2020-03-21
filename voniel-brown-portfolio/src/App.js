@@ -2,7 +2,8 @@ import React, { Component } from "react";
 import Home from "./Pages/Home/HomePage";
 import About from "./Pages/About/BioPage";
 import { NavBar } from "./Components/Navigation/Navbar";
-// import { Footer } from './Components/Navigation/Footer'
+import { Footer } from "./Components/Navigation/Footer";
+import Toggle from "react-toggle";
 import Projects from "./Pages/Projects/ProjectsPage";
 import Contact from "./Pages/Contact/Contact";
 import { Element, animateScroll as scroll, scroller } from "react-scroll";
@@ -87,7 +88,7 @@ class Landing extends Component {
 
   render() {
     let backDrop;
-    const { visible } = this.state;
+    const { visible, darkMode } = this.state;
     if (this.state.sideDrawerOpen) {
       backDrop = <Backdrop clicked={this.backDropClick} />;
     }
@@ -105,9 +106,14 @@ class Landing extends Component {
           sideDrawerOpen={this.state.sideDrawerOpen}
           scrollTo={this.scrollTo}
           drawerClick={this.drawerToggler}
-          darkMode={this.state.darkMode}
-          handleThemeToggle={this.handleThemeToggle}
         />
+        <div className="theme-toggle-btn">
+          <Toggle
+            id="cheese-status"
+            defaultChecked={darkMode}
+            onChange={this.handleThemeToggle}
+          />
+        </div>
         <Element name="home" className="homePage">
           <Home />
 
@@ -130,9 +136,8 @@ class Landing extends Component {
         <Element name="contact">
           <Contact />
         </Element>
-
-        {// <Footer />
-        !visible ? (
+        <Footer />
+        {!visible ? (
           <button
             className="scrollToTop button-theme nav-scroll"
             onClick={this.scrollToTop}
