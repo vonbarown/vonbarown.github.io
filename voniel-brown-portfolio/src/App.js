@@ -3,7 +3,7 @@ import Home from "./Pages/Home/HomePage";
 import About from "./Pages/About/BioPage";
 import { NavBar } from "./Components/Navigation/Navbar";
 // import { Footer } from './Components/Navigation/Footer'
-import Portfolio from "./Pages/Projects/ProjectsPage";
+import Projects from "./Pages/Projects/ProjectsPage";
 import Contact from "./Pages/Contact/Contact";
 import { Element, animateScroll as scroll, scroller } from "react-scroll";
 import { SideDrawer } from "./Components/Navigation/SideDrawer";
@@ -103,7 +103,7 @@ class Landing extends Component {
 
           {this.state.visible ? (
             <button
-              name="portfolio"
+              name="projects"
               className="button-theme nav-scroll"
               onClick={this.scrollTo}
             >
@@ -111,8 +111,8 @@ class Landing extends Component {
             </button>
           ) : null}
         </Element>
-        <Element name="portfolio">
-          <Portfolio />
+        <Element name="projects">
+          <Projects />
         </Element>
         <Element name="about">
           <About />

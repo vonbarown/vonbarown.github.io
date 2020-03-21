@@ -36,8 +36,8 @@ export const Skills = () => {
         </svg>
         <p>Redux</p>
       </div>
-      <div className="skills-icon-div">
-        <div className="skill-icon">
+      <div className="skills-icon-div postgres-icon">
+        <div className="skill-icon ">
           <img
             className="postgres"
             src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Postgresql_elephant.svg/1200px-Postgresql_elephant.svg.png"
@@ -46,7 +46,7 @@ export const Skills = () => {
           <p>PostGres</p>
         </div>
       </div>
-       <div className="skill-icon-div">
+      <div className="skill-icon-div github">
         <svg className="skill-icon" viewBox="0 0 128 128">
           <path
             fill="#F34F29"

@@ -27,7 +27,7 @@ export const NavBar = ({
           <button className="nav-button" onClick={scrollTo} name="about">
             About
           </button>
-          <button className="nav-button" onClick={scrollTo} name="portfolio">
+          <button className="nav-button" onClick={scrollTo} name="projects">
             Projects
           </button>
           <button className="nav-button" onClick={scrollTo} name="contact">

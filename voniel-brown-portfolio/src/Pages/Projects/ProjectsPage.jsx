@@ -1,9 +1,9 @@
 import React from "react";
-import "./portfolio.css";
+import "./projects.css";
 import { ProjectCard } from "./projectCard";
 import synergie_landing from "../../assets/synergie-landing.png";
 
-const Portfolio = () => {
+const Projects = () => {
   const projects = [
     {
       title: `Synergie`,
@@ -64,4 +64,4 @@ const Portfolio = () => {
   );
 };
 
-export default Portfolio;
+export default Projects;

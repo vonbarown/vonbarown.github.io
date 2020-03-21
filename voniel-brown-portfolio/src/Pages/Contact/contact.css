@@ -39,3 +39,16 @@
 .postgres {
   height: 90px;
 }
+
+@media screen and (max-width: 768px) {
+  /* .contactPage {
+    margin-top: 40vh;
+    gap: 40px;
+  }
+
+  .skills-container {
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 100%;
+  } */
+}
