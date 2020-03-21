@@ -91,6 +91,11 @@ $accent-color: #355cc9;
     grid-template-columns: repeat(4, auto);
     grid-column-gap: 0.8em;
     justify-items: center;
+
+    a {
+      color: teal;
+      text-decoration: none;
+    }
   }
 
   .info {

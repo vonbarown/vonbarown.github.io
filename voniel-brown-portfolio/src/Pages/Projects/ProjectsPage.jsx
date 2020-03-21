@@ -12,7 +12,7 @@ const Projects = () => {
                         shows that you love.`,
       img_url: synergie_landing,
       live: "",
-      repo: ""
+      repo: `https://github.com/vonbarown/Watch-List`
     },
     {
       title: `fwrfgw`,

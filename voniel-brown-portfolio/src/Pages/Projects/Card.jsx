@@ -2,7 +2,9 @@ import React from "react";
 // import "./projects.css";
 import "./card.scss";
 
-export const ProjectCard = ({ project: { title, description, img_url } }) => {
+export const ProjectCard = ({
+  project: { title, description, img_url, repo }
+}) => {
   return (
     <div className="project-card" key={title} id="project-card">
       <div className="wrapper">
@@ -29,6 +31,9 @@ export const ProjectCard = ({ project: { title, description, img_url } }) => {
             </div>
             <div className="back">
               <div className="inner">
+                <div className="links">
+                  <a href={repo}>Github</a>
+                </div>
                 <div className="description">
                   <p>{description}</p>
                 </div>
