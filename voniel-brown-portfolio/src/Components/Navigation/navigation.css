@@ -1,5 +1,7 @@
 .theme-toggle-btn {
-  margin-left: -2vw;
+  position: absolute;
+  right: 10px;
+  top: 10px;
 }
 
 .navbar {

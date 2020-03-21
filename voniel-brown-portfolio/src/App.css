@@ -111,6 +111,6 @@ button {
 }
 
 .proj-scroll {
-  /* position: fixed; */
-  margin-bottom: 90px;
+  position: absolute;
+  margin-bottom: -60vh;
 }

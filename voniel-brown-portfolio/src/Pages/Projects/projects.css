@@ -3,6 +3,7 @@
   width: 100vw;
   grid-gap: 10px;
   display: flex;
+  min-height: 780px;
   align-items: center;
   justify-content: center;
   /* border: 1px solid black; */
@@ -38,9 +39,13 @@
     gap: 20px;
     width: 100vw;
     display: flex;
-    overflow-y: scroll;
-    flex-direction: row;
+    /* overflow-y: scroll; */
+    /* flex-direction: row; */
     justify-content: flex-start;
+  }
+  .portfolioPage .flex {
+    /* flex-wrap: wrap; */
+    flex-direction: column;
   }
 }
 

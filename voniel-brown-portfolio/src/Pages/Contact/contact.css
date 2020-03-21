@@ -1,6 +1,6 @@
 .contactPage {
   gap: 200px;
-  height: 100vh;
+  min-height: 780px;
   width: 100vw;
   display: flex;
   align-items: center;
