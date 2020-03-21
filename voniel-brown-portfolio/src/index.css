@@ -3,6 +3,11 @@ body {
   font-family: "Open Sans", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: linear-gradient(
+    75deg,
+    rgba(170, 194, 170, 0.329),
+    rgba(51, 38, 38, 0.171)
+  );
 }
 
 code {

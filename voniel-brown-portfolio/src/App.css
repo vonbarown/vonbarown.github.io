@@ -48,14 +48,14 @@
 .scrollToTop {
   bottom: 90px;
   top: -90px;
-  left: 90vw;
+  left: 97.2vw;
   z-index: 100;
   display: flex;
   position: sticky;
   align-items: center;
 }
 
-html .darkMode {
+html body .darkMode {
   background-color: black;
 }
 
@@ -112,5 +112,5 @@ button {
 
 .proj-scroll {
   position: absolute;
-  margin-bottom: -60vh;
+  margin-bottom: -30pc;
 }

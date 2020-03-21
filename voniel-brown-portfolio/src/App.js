@@ -69,9 +69,9 @@ class Landing extends Component {
   handleThemeToggle = e => {
     this.setState({ darkMode: e.target.checked });
     if (e.target.checked) {
-      document.body.style = "background  black;";
+      document.body.style = "background:  black;";
     } else {
-      document.body.style = "background: white; transition: 0.5s ease;";
+      document.body.style = "background: white-smoke; transition: 0.5s ease;";
     }
   };
   handleScroll = () => {
