@@ -1,7 +1,5 @@
 .theme-toggle-btn {
-  display: flex;
-  gap: 10px;
-  align-items: center;
+  margin-left: -1vw;
 }
 
 .navbar {

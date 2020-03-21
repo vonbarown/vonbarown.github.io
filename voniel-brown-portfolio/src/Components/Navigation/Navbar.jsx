@@ -36,7 +36,6 @@ export const NavBar = ({
           <br />
         </div>
         <div className="theme-toggle-btn">
-          <label htmlFor="cheese-status">Theme</label>
           <Toggle
             id="cheese-status"
             defaultChecked={darkMode}
