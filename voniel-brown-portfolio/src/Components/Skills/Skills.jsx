@@ -45,6 +45,7 @@ export const Skills = () => {
           />
           <p>PostGres</p>
         </div>
+        <br />
       </div>
       <div className="skill-icon-div github">
         <svg className="skill-icon" viewBox="0 0 128 128">

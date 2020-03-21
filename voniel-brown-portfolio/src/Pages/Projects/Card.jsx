@@ -1,6 +1,6 @@
 import React from "react";
 // import "./projects.css";
-import "./test.scss";
+import "./card.scss";
 
 export const ProjectCard = ({ project: { title, description, img_url } }) => {
   return (
@@ -32,8 +32,11 @@ export const ProjectCard = ({ project: { title, description, img_url } }) => {
                 <div className="description">
                   <p>{description}</p>
                 </div>
-                <label for={title} className="button return" aria-hidden="true">
-                </label>
+                <label
+                  for={title}
+                  className="button return"
+                  aria-hidden="true"
+                ></label>
               </div>
             </div>
           </div>

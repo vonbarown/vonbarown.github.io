@@ -1,6 +1,6 @@
 import React from "react";
 import "./projects.css";
-import { ProjectCard } from "./projectCard";
+import { ProjectCard } from "./Card";
 import synergie_landing from "../../assets/synergie-landing.png";
 
 const Projects = () => {
