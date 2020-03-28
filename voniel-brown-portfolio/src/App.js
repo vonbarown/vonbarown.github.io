@@ -59,12 +59,10 @@ class Landing extends Component {
     } else {
       this.setState(prevState => {
         return {
-          darkMode: prevState.darkMode,
           toggle: !prevState.toggle
         };
       });
     }
-
     darkPref.addEventListener("change", () => {});
   }
 
