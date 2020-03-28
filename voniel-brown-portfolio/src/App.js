@@ -119,7 +119,13 @@ class Landing extends Component {
       backDrop = <Backdrop clicked={this.backDropClick} />;
     }
     if (toggle) {
-      activeToggle = false;
+      activeToggle = (
+        <Toggle
+          id="cheese-status"
+          defaultChecked={darkMode}
+          onChange={this.handleThemeToggle}
+        />
+      );
     }
     return (
       <div className={darkMode && toggle ? "landing darkMode" : "App"}>
@@ -136,13 +142,7 @@ class Landing extends Component {
             drawerClick={this.drawerToggler}
           />
         ) : null}
-        <div className="theme-toggle-btn">
-          <Toggle
-            id="cheese-status"
-            defaultChecked={darkMode}
-            onChange={this.handleThemeToggle}
-          />
-        </div>
+        <div className="theme-toggle-btn">{activeToggle}</div>
         <Element name="home" className="homePage">
           <Home />
 
