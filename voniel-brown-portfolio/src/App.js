@@ -39,11 +39,33 @@ class Landing extends Component {
     sideDrawerOpen: false,
     darkMode: false,
     visible: true,
+    toggle: false,
     timer: null
   };
 
   componentDidMount() {
     window.addEventListener("scroll", this.handleScroll);
+
+    const darkPref = window.matchMedia("(prefers-color-scheme: dark)");
+
+    if (darkPref.matches) {
+      console.log(darkPref);
+      this.setState(prevState => {
+        return {
+          darkMode: !prevState.darkMode,
+          toggle: !prevState.toggle
+        };
+      });
+    } else {
+      this.setState(prevState => {
+        return {
+          darkMode: prevState.darkMode,
+          toggle: !prevState.toggle
+        };
+      });
+    }
+
+    darkPref.addEventListener("change", () => {});
   }
 
   scrollToTop = () => scroll.scrollToTop();
@@ -88,24 +110,28 @@ class Landing extends Component {
   };
 
   render() {
+    console.log("rendered");
+
     let backDrop;
-    const { visible, darkMode } = this.state;
-    if (this.state.sideDrawerOpen) {
+    let activeToggle;
+    let { visible, darkMode, toggle, sideDrawerOpen } = this.state;
+    if (sideDrawerOpen) {
       backDrop = <Backdrop clicked={this.backDropClick} />;
     }
-
+    if (toggle) {
+      activeToggle = false;
+    }
     return (
-      <div className={this.state.darkMode ? "landing darkMode" : "App"}>
+      <div className={darkMode && toggle ? "landing darkMode" : "App"}>
         <SideDrawer
           scrollTo={this.scrollTo}
-          show={this.state.sideDrawerOpen}
-          darkMode={this.state.darkMode}
+          show={sideDrawerOpen}
           handleThemeToggle={this.handleThemeToggle}
         />
         {backDrop}
         {visible ? (
           <NavBar
-            sideDrawerOpen={this.state.sideDrawerOpen}
+            sideDrawerOpen={sideDrawerOpen}
             scrollTo={this.scrollTo}
             drawerClick={this.drawerToggler}
           />

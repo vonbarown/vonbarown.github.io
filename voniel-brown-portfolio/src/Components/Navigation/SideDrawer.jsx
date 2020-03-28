@@ -1,5 +1,4 @@
 import React from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "./navigation.css";
 import pen from "../../assets/pen.svg";
 import project from "../../assets/project-management.svg";

@@ -114,3 +114,13 @@ button {
   position: absolute;
   margin-bottom: -30pc;
 }
+
+@media (prefers-color-scheme: dark) {
+  /* img {
+    opacity: 0.75;
+    transition: opacity 0.5s ease-in-out;
+  } */
+  /* img:hover {
+    opacity: 1;
+  } */
+}
