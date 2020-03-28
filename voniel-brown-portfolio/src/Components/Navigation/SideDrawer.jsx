@@ -57,20 +57,6 @@ export const SideDrawer = ({ scrollTo, show, darkMode, handleThemeToggle }) => {
           <br />
         </div>
       </div>
-      <div className="external-links">
-        <a href="https://github.com/vonbarown">
-          <FontAwesomeIcon
-            className="fa-icon github"
-            icon={["fab", "github"]}
-          />
-        </a>
-        <a href="https://www.linkedin.com/in/vonielbrown/">
-          <FontAwesomeIcon
-            className="fa-icon linked-in"
-            icon={["fab", "linkedin"]}
-          />
-        </a>
-      </div>
     </div>
   );
 };

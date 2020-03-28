@@ -24,7 +24,7 @@ export const ProjectCard = ({
             >
               <div className="inner">
                 <h2>{title}</h2>
-                <label for={title} className="button" aria-hidden="true">
+                <label htmlFor={title} className="button" aria-hidden="true">
                   Details
                 </label>
               </div>
@@ -37,7 +37,11 @@ export const ProjectCard = ({
                 <div className="description">
                   <p>{description}</p>
                 </div>
-                <label for={title} className="button return" aria-hidden="true">
+                <label
+                  htmlFor={title}
+                  className="button return"
+                  aria-hidden="true"
+                >
                   <FontAwesomeIcon
                     className="fas"
                     icon={["fas", "arrow-left"]}

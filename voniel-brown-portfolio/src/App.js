@@ -38,7 +38,8 @@ class Landing extends Component {
   state = {
     sideDrawerOpen: false,
     darkMode: false,
-    visible: true
+    visible: true,
+    timer: null
   };
 
   componentDidMount() {
@@ -102,11 +103,13 @@ class Landing extends Component {
           handleThemeToggle={this.handleThemeToggle}
         />
         {backDrop}
-        <NavBar
-          sideDrawerOpen={this.state.sideDrawerOpen}
-          scrollTo={this.scrollTo}
-          drawerClick={this.drawerToggler}
-        />
+        {visible ? (
+          <NavBar
+            sideDrawerOpen={this.state.sideDrawerOpen}
+            scrollTo={this.scrollTo}
+            drawerClick={this.drawerToggler}
+          />
+        ) : null}
         <div className="theme-toggle-btn">
           <Toggle
             id="cheese-status"
