@@ -63,7 +63,6 @@ class Landing extends Component {
         };
       });
     }
-    darkPref.addEventListener("change", () => {});
   }
 
   scrollToTop = () => scroll.scrollToTop();
@@ -90,7 +89,7 @@ class Landing extends Component {
   handleThemeToggle = e => {
     this.setState({ darkMode: e.target.checked });
     if (e.target.checked) {
-      document.body.style = "background:  black;";
+      document.body.style.backgroundColor = "black;";
     } else {
       document.body.style = "background: white-smoke; transition: 0.5s ease;";
     }
@@ -112,7 +111,9 @@ class Landing extends Component {
 
     let backDrop;
     let activeToggle;
+
     let { visible, darkMode, toggle, sideDrawerOpen } = this.state;
+
     if (sideDrawerOpen) {
       backDrop = <Backdrop clicked={this.backDropClick} />;
     }
@@ -126,7 +127,7 @@ class Landing extends Component {
       );
     }
     return (
-      <div className={darkMode && toggle ? "landing darkMode" : "App"}>
+      <div className={darkMode ? "landing darkMode" : "App"}>
         <SideDrawer
           scrollTo={this.scrollTo}
           show={sideDrawerOpen}

@@ -8,7 +8,7 @@ export const SideDrawer = ({ scrollTo, show, darkMode, handleThemeToggle }) => {
   let drawerClassNames = ["side-drawer"];
 
   if (show) {
-    drawerClassNames = " open";
+    drawerClassNames = "open";
   }
 
   return (

@@ -1,28 +1,30 @@
 .backdrop {
-  position: fixed;
-  height: 100%;
-  width: 100%;
-  background: rgba(0, 0, 0, 0.3);
-  z-index: 100;
   top: 0;
+  width: 100%;
   left: 0;
+  height: 100%;
+  z-index: 100;
+  position: fixed;
+  background: rgba(0, 0, 0, 0.3);
 }
 .toggle-button {
+  padding: 0;
+  width: 36px;
+  height: 24px;
+  border: none;
   display: flex;
+  cursor: pointer;
   flex-direction: column;
   justify-content: space-around;
-  height: 24px;
-  width: 36px;
   background-color: transparent;
-  border: none;
-  cursor: pointer;
-  padding: 0;
 }
 
 .sidebar-toggle-button {
-  position: fixed;
+  top: 0;
   left: 3px;
   z-index: 900;
+  margin-top: 8px;
+  position: fixed;
 }
 
 .toggle-button:focus {
@@ -47,13 +49,11 @@
   z-index: 200;
   position: fixed;
   max-width: 400px;
+  margin-top: 40px;
   align-items: center;
   flex-direction: column;
-  justify-content: center;
   transform: translateX(-200%);
-  transition: transform 0.3s ease-out;
-  /* box-shadow: 1px 0px 3px rgba(0, 0, 0, 0.5); */
-  /* background-image: linear-gradient(lightblue, rgba(173, 216, 230, 0)); */
+  transition: transform 0.9s ease-out;
 }
 
 .side-drawer .open {
@@ -61,22 +61,18 @@
   transform: translateX(0);
 }
 .open {
-  top: 0;
+  /* top: 0; */
   left: 0;
   width: 10%;
   height: 100%;
   z-index: 200;
   display: flex;
   font-size: 30px;
+  margin-top: 40px;
   position: fixed;
-  /* max-width: 400px; */
-  /* align-items: center; */
   flex-direction: column;
-  justify-content: center;
   background-color: transparent;
   transition: transform 0.3s ease-out;
-  /* box-shadow: 1px 0px 3px rgba(0, 0, 0, 0.5); */
-  /* background-image: linear-gradient(lightblue, rgba(173, 216, 230, 0)); */
 }
 
 @media (orientation: landscape) {
