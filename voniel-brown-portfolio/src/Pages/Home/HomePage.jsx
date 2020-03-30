@@ -15,7 +15,7 @@ const Home = () => {
       <div>
         Full Stack software engineering fellow currently studying at Pursuit
       </div>
-      <div className="contact-btn-container">
+      <div className="contact-btn-container home-contact-btn">
         <button className="submit" onClick={handleButtonClick}>
           Contact
         </button>

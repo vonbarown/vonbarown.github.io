@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "./card.scss";
 
 export const ProjectCard = ({
-  project: { title, description, img_url, repo }
+  project: { title, description, img_url, repo, live }
 }) => {
   return (
     <div className="project-card" key={title} id="project-card">
@@ -23,7 +23,7 @@ export const ProjectCard = ({
               }}
             >
               <div className="inner">
-                <h2>{title}</h2>
+                <h2 id="card-title">{title}</h2>
                 <label htmlFor={title} className="button" aria-hidden="true">
                   Details
                 </label>
@@ -33,6 +33,7 @@ export const ProjectCard = ({
               <div className="inner">
                 <div className="links">
                   <a href={repo}>Github</a>
+                  <a href={live}>Live Site</a>
                 </div>
                 <div className="description">
                   <p>{description}</p>

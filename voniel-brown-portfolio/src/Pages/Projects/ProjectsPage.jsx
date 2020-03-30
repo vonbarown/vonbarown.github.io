@@ -2,24 +2,28 @@ import React from "react";
 import "./projects.css";
 import { ProjectCard } from "./Card";
 import synergie_landing from "../../assets/synergie-landing.png";
+import portfolio_light from "../../assets/portfolio_light.png";
 
 const Projects = () => {
   const projects = [
     {
       title: `Synergie`,
-      description: `Synergie is a full-stack react app, that allows users to keep track of their favorite shows.
-                        Allowing users to plan their binging sessions with their friends.We know that life can be busy, now you can keep track of the
-                        shows that you love.`,
+      description: `
+      Synergie is a full-stack react app, that allows users to keep track of their favorite shows.
+      Allowing users to plan their binging sessions with their friends.We know that life can be busy, now you can keep track of the
+      shows that you love.`,
       img_url: synergie_landing,
       live: "",
       repo: `https://github.com/vonbarown/Watch-List`
     },
     {
-      title: `fwrfgw`,
-      description: `just`,
-      img_url: ``,
-      live: "",
-      repo: ""
+      title: `Portfolio Site`,
+      description: `
+        My portfolio site built using react
+      `,
+      img_url: portfolio_light,
+      live: `https://vonielbrown.com/`,
+      repo: `https://github.com/vonbarown/vonbarown.github.io`
     },
     {
       title: `fwrdfqd`,
@@ -31,20 +35,6 @@ const Projects = () => {
     {
       title: `fwrdgq`,
       description: `mellow`,
-      img_url: ``,
-      live: "",
-      repo: ""
-    },
-    {
-      title: `fwrdgqdefq`,
-      description: `fellow`,
-      img_url: ``,
-      live: "",
-      repo: ""
-    },
-    {
-      title: `fwrdgdqqdefq`,
-      description: `just`,
       img_url: ``,
       live: "",
       repo: ""

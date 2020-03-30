@@ -60,3 +60,8 @@
   height: 120px;
   width: 15rem;
 }
+
+#card-title {
+  margin-top: -70px;
+  color: white;
+}
