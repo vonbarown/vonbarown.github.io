@@ -40,7 +40,8 @@ class Landing extends Component {
     darkMode: false,
     visible: true,
     toggle: false,
-    timer: null
+    timer: null,
+    blink: true
   };
 
   componentDidMount() {
@@ -63,7 +64,15 @@ class Landing extends Component {
         };
       });
     }
+    setInterval(() => {
+      this.setState({ blink: !this.state.blink });
+    }, 2000);
   }
+
+  // componentDidUpdate(prevProp, prevState) {
+  //   if (this.state.blink === prevState.blink) {
+
+  // }
 
   scrollToTop = () => scroll.scrollToTop();
 
@@ -112,7 +121,8 @@ class Landing extends Component {
     let backDrop;
     let activeToggle;
 
-    let { visible, darkMode, toggle, sideDrawerOpen } = this.state;
+    let { visible, darkMode, toggle, sideDrawerOpen, blink } = this.state;
+    console.log(blink);
 
     if (sideDrawerOpen) {
       backDrop = <Backdrop clicked={this.backDropClick} />;
@@ -148,10 +158,12 @@ class Landing extends Component {
           {visible ? (
             <button
               name="projects"
-              className="button-theme nav-scroll proj-scroll"
+              className={
+                blink ? "hidden" : "button-theme nav-scroll proj-scroll"
+              }
               onClick={this.scrollTo}
             >
-              \/
+              V
             </button>
           ) : null}
         </Element>

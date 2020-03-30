@@ -113,6 +113,8 @@ button {
 .proj-scroll {
   position: absolute;
   margin-bottom: -30pc;
+  font-size: 25px;
+  transition: transform 0.3s ease-in;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -123,4 +125,25 @@ button {
   /* img:hover {
     opacity: 1;
   } */
+}
+
+.page-title {
+  font-size: 70px;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+}
+
+.darkMode .page-title {
+  border-top: 2px solid white;
+  border-bottom: 2px solid white;
+}
+.hidden {
+  color: rgba(0, 0, 0, 0);
+  background-color: rgba(0, 0, 0, 0);
+  display: none;
+  transition: transform 0.9s ease-out;
+}
+.darkMode .proj-scroll {
+  background: linear-gradient(145deg, #3787bc, #41a1e0);
+  box-shadow: 7px 7px 14px #3480b2, -7px -7px 14px #46adf0;
 }

@@ -43,6 +43,7 @@ const Projects = () => {
 
   return (
     <div className="portfolioPage">
+      <h1 className="page-title">Projects</h1>
       <div className="inner-frame">
         <div className="flex">
           {projects.map(project => (

@@ -4,8 +4,8 @@ import "./aboutPage.css";
 const About = () => {
   return (
     <div className="aboutPage">
-      <div className="page-title">
-        <h2>About</h2>
+      <div>
+        <h2 className="page-title">About</h2>
       </div>
       {
         <img
