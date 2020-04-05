@@ -49,7 +49,7 @@
 .scrollToTop {
   bottom: 90px;
   top: -90px;
-  left: 97.2vw;
+  left: 95.2vw;
   z-index: 100;
   display: flex;
   position: sticky;
