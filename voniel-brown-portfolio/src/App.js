@@ -45,7 +45,6 @@ class Landing extends Component {
   };
 
   componentDidMount() {
-
     //add eventListener to check for the users preferred device
     window.addEventListener("scroll", this.handleScroll);
 
@@ -66,13 +65,12 @@ class Landing extends Component {
         };
       });
     }
-    /
+
     //creating interval to change class name of the scroll down arrow
     setInterval(() => {
       this.setState({ blink: !this.state.blink });
     }, 2000);
   }
-
 
   scrollToTop = () => scroll.scrollToTop();
 
