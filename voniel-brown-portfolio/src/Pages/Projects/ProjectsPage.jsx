@@ -14,7 +14,7 @@ const Projects = () => {
       shows that you love.`,
       img_url: synergie_landing,
       live: "",
-      repo: `https://github.com/vonbarown/Watch-List`
+      repo: `https://github.com/vonbarown/Watch-List`,
     },
     {
       title: `Portfolio Site`,
@@ -23,22 +23,8 @@ const Projects = () => {
       `,
       img_url: portfolio_light,
       live: `https://vonielbrown.com/`,
-      repo: `https://github.com/vonbarown/vonbarown.github.io`
+      repo: `https://github.com/vonbarown/vonbarown.github.io`,
     },
-    {
-      title: `fwrdfqd`,
-      description: `a`,
-      img_url: ``,
-      live: "",
-      repo: ""
-    },
-    {
-      title: `fwrdgq`,
-      description: `mellow`,
-      img_url: ``,
-      live: "",
-      repo: ""
-    }
   ];
 
   return (
@@ -46,7 +32,7 @@ const Projects = () => {
       <h1 className="page-title">Projects</h1>
       <div className="inner-frame">
         <div className="flex">
-          {projects.map(project => (
+          {projects.map((project) => (
             <ProjectCard project={project} key={project.title} />
           ))}
         </div>

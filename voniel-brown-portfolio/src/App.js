@@ -19,7 +19,7 @@ import {
   faCss3Alt,
   faHtml5,
   faJs,
-  faGitAlt
+  faGitAlt,
 } from "@fortawesome/free-brands-svg-icons";
 import { faArrowLeft } from "@fortawesome/free-solid-svg-icons";
 
@@ -41,38 +41,38 @@ class Landing extends Component {
     visible: true,
     toggle: false,
     timer: null,
-    blink: true
+    blink: true,
   };
 
   componentDidMount() {
+
+    //add eventListener to check for the users preferred device
     window.addEventListener("scroll", this.handleScroll);
 
     const darkPref = window.matchMedia("(prefers-color-scheme: dark)");
 
     if (darkPref.matches) {
       console.log(darkPref);
-      this.setState(prevState => {
+      this.setState((prevState) => {
         return {
           darkMode: !prevState.darkMode,
-          toggle: !prevState.toggle
+          toggle: !prevState.toggle,
         };
       });
     } else {
-      this.setState(prevState => {
+      this.setState((prevState) => {
         return {
-          toggle: !prevState.toggle
+          toggle: !prevState.toggle,
         };
       });
     }
+    /
+    //creating interval to change class name of the scroll down arrow
     setInterval(() => {
       this.setState({ blink: !this.state.blink });
     }, 2000);
   }
 
-  // componentDidUpdate(prevProp, prevState) {
-  //   if (this.state.blink === prevState.blink) {
-
-  // }
 
   scrollToTop = () => scroll.scrollToTop();
 
@@ -80,22 +80,22 @@ class Landing extends Component {
     scroller.scrollTo(e.target.name, {
       duration: 800,
       delay: 0,
-      smooth: "easeInOutQuart"
+      smooth: "easeInOutQuart",
     });
   }
   drawerToggler = () => {
-    this.setState(prevState => {
+    this.setState((prevState) => {
       return { sideDrawerOpen: !prevState.sideDrawerOpen };
     });
   };
 
   backDropClick = () => {
     this.setState({
-      sideDrawerOpen: false
+      sideDrawerOpen: false,
     });
   };
 
-  handleThemeToggle = e => {
+  handleThemeToggle = (e) => {
     this.setState({ darkMode: e.target.checked });
     if (e.target.checked) {
       document.body.style.backgroundColor = "black;";
@@ -111,7 +111,7 @@ class Landing extends Component {
 
     this.setState({
       prevScrollPos: currentScrollPos,
-      visible
+      visible,
     });
   };
 
