@@ -1,5 +1,6 @@
 .App,
 .darkMode {
+  overflow-y: scroll;
   text-align: center;
   width: 100vw;
   position: relative;
