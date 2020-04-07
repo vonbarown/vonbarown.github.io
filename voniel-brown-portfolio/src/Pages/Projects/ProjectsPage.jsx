@@ -13,7 +13,7 @@ const Projects = () => {
       Allowing users to plan their binging sessions with their friends.We know that life can be busy, now you can keep track of the
       shows that you love.`,
       img_url: synergie_landing,
-      live: "",
+      live: `https://synergie-watch-list.herokuapp.com/`,
       repo: `https://github.com/vonbarown/Watch-List`,
     },
     {
