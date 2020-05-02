@@ -1,8 +1,8 @@
 import React from "react";
 import "./navigation.css";
-import pen from "../../assets/pen.svg";
-import project from "../../assets/project-management.svg";
-import about from "../../assets/about.svg";
+import skills from "../../assets/skills.svg";
+import lightbulb from "../../assets/lightbulb.svg";
+import user from "../../assets/user.svg";
 
 export const SideDrawer = ({ scrollTo, show, darkMode, handleThemeToggle }) => {
   let drawerClassNames = ["side-drawer"];
@@ -25,7 +25,7 @@ export const SideDrawer = ({ scrollTo, show, darkMode, handleThemeToggle }) => {
           </button>
           <button className="nav-button">
             <img
-              src={about}
+              src={user}
               alt="About"
               onClick={scrollTo}
               name="about"
@@ -36,7 +36,7 @@ export const SideDrawer = ({ scrollTo, show, darkMode, handleThemeToggle }) => {
           <button className="nav-button">
             <img
               className="nav-icon"
-              src={project}
+              src={lightbulb}
               alt="Projects"
               onClick={scrollTo}
               name="projects"
@@ -46,7 +46,7 @@ export const SideDrawer = ({ scrollTo, show, darkMode, handleThemeToggle }) => {
           <button className="nav-button">
             <img
               className="nav-icon"
-              src={pen}
+              src={skills}
               alt="Skills"
               onClick={scrollTo}
               name="contact"

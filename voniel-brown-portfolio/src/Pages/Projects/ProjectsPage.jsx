@@ -25,6 +25,15 @@ const Projects = () => {
       live: `https://vonielbrown.com/`,
       repo: `https://github.com/vonbarown/vonbarown.github.io`,
     },
+    // {
+    //   title: `WanderFull`,
+    //   description: `
+    //     My portfolio site built using react
+    //   `,
+    //   img_url: portfolio_light,
+    //   live: `https://wanderfull-react.herokuapp.com`,
+    //   repo: `https://github.com/vonbarown/WanderFull`,
+    // },
   ];
 
   return (

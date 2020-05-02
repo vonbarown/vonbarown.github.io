@@ -12,6 +12,7 @@
   width: 36px;
   height: 24px;
   border: none;
+  margin-left: 40%;
   display: flex;
   cursor: pointer;
   flex-direction: column;

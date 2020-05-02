@@ -1,9 +1,9 @@
 import React from "react";
 import { DrawerToggleButton } from "./DrawerToggle";
 import "./navigation.css";
-import pen from "../../assets/pen.svg";
-import project from "../../assets/project-management.svg";
-import about from "../../assets/about.svg";
+import skills from "../../assets/skills.svg";
+import lightbulb from "../../assets/lightbulb.svg";
+import user from "../../assets/user.svg";
 export const NavBar = ({ scrollTo, drawerClick }) => {
   return (
     <div className="navbar">
@@ -13,7 +13,7 @@ export const NavBar = ({ scrollTo, drawerClick }) => {
       <div className="navigation-items">
         <div className="nav-buttons">
           <button
-            className="nav-button"
+            className="name"
             id="Voniel-Brown"
             onClick={scrollTo}
             name="home"
@@ -22,7 +22,7 @@ export const NavBar = ({ scrollTo, drawerClick }) => {
           </button>
           <button className="nav-button">
             <img
-              src={about}
+              src={user}
               alt="About"
               onClick={scrollTo}
               name="about"
@@ -33,7 +33,7 @@ export const NavBar = ({ scrollTo, drawerClick }) => {
           <button className="nav-button">
             <img
               className="nav-icon"
-              src={project}
+              src={lightbulb}
               alt="Projects"
               onClick={scrollTo}
               name="projects"
@@ -43,7 +43,7 @@ export const NavBar = ({ scrollTo, drawerClick }) => {
           <button className="nav-button">
             <img
               className="nav-icon"
-              src={pen}
+              src={skills}
               alt="Skills"
               onClick={scrollTo}
               name="contact"
