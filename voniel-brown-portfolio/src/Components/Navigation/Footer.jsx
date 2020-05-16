@@ -17,6 +17,14 @@ export const Footer = () => {
             icon={["fab", "linkedin"]}
           />
         </a>
+        <div className="copyright-container">
+          {" "}
+          <FontAwesomeIcon
+            className="fa-icon copyright"
+            icon={["fa", "copyright"]}
+          />
+          <p style={{ marginTop: "13px" }}>Voniel Brown</p>
+        </div>
       </div>
     </div>
   );

@@ -284,3 +284,14 @@
   align-items: center;
   justify-content: center;
 }
+
+.copyright {
+  height: 15px;
+}
+
+.copyright-container {
+  font-family: "Aguafina Script", cursive;
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+}
