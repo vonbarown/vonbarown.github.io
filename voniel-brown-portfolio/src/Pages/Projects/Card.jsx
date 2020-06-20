@@ -32,10 +32,10 @@ export const ProjectCard = ({
             <div className="back">
               <div className="inner">
                 <div className="links">
-                  <a href={repo} target="_blank">
+                  <a href={repo} target="_blank" rel="noopener noreferrer">
                     Github
                   </a>
-                  <a href={live} target="_blank">
+                  <a href={live} target="_blank" rel="noopener noreferrer">
                     Live Site
                   </a>
                 </div>

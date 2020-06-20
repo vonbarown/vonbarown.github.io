@@ -109,8 +109,6 @@ class Landing extends Component {
   };
 
   render() {
-    console.log("rendered");
-
     let backDrop;
     let activeToggle;
 
@@ -167,9 +165,7 @@ class Landing extends Component {
         <Element name="contact">
           <Contact />
         </Element>
-        {
-          // <Footer />
-        }
+        {<Footer />}
         {!visible ? (
           <button
             className="scrollToTop button-theme nav-scroll"

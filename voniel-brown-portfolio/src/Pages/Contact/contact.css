@@ -30,11 +30,12 @@
   justify-content: space-evenly;
   margin-top: 90px;
   margin-bottom: 50px;
+  width: 100vw;
 }
 
 .skill-icon {
   height: 90px;
-  margin-left: 50px;
+  margin-left: 5px;
 }
 
 .postgres {
