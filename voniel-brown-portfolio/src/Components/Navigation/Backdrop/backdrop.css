@@ -22,7 +22,7 @@
 
 .sidebar-toggle-button {
   top: 0;
-  left: 3px;
+  left: 10px;
   z-index: 900;
   margin-top: 8px;
   position: fixed;

@@ -20,34 +20,34 @@ export const NavBar = ({ scrollTo, drawerClick }) => {
           >
             VB
           </button>
-          <button className="nav-button">
+          <button className="nav-button nav-button-scroll">
+            <span class="toolTipText">About</span>
             <img
               src={user}
               alt="About"
               onClick={scrollTo}
               name="about"
               className="nav-icon"
-              title="About"
             />
           </button>
-          <button className="nav-button">
+          <button className="nav-button nav-button-scroll">
+            <span class="toolTipText">Projects</span>
             <img
               className="nav-icon"
               src={lightbulb}
               alt="Projects"
               onClick={scrollTo}
               name="projects"
-              title="Projects"
             />
           </button>
-          <button className="nav-button">
+          <button className="nav-button nav-button-scroll">
+            <span class="toolTipText">Skills</span>
             <img
               className="nav-icon"
               src={skills}
               alt="Skills"
               onClick={scrollTo}
               name="contact"
-              title="Skills"
             />
           </button>
           <br />

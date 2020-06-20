@@ -151,7 +151,7 @@ class Landing extends Component {
           {visible ? (
             <button
               name="projects"
-              className={"button-theme scrollDown"}
+              className="scrollDown"
               onClick={this.scrollTo}
             >
               V
