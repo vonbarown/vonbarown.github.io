@@ -7,13 +7,7 @@ const About = () => {
       <div>
         <h2 className="page-title">About</h2>
       </div>
-      {
-        <img
-          src="https://avatars2.githubusercontent.com/u/52142269?s=460&v=4"
-          alt="Voniel Brown"
-          className="Voniel"
-        />
-      }
+
       <div className="container">
         <div className="content">
           <p className="para-1">

@@ -42,7 +42,6 @@ class Landing extends Component {
     visible: true,
     toggle: false,
     timer: null,
-    blink: true,
   };
 
   componentDidMount() {
@@ -66,11 +65,6 @@ class Landing extends Component {
         };
       });
     }
-
-    //creating interval to change class name of the scroll down arrow
-    setInterval(() => {
-      this.setState({ blink: !this.state.blink });
-    }, 2000);
   }
 
   scrollToTop = () => scroll.scrollToTop();
@@ -157,9 +151,7 @@ class Landing extends Component {
           {visible ? (
             <button
               name="projects"
-              className={
-                blink ? "hidden" : "button-theme nav-scroll proj-scroll"
-              }
+              className={"button-theme scrollDown"}
               onClick={this.scrollTo}
             >
               V
@@ -175,7 +167,9 @@ class Landing extends Component {
         <Element name="contact">
           <Contact />
         </Element>
-        <Footer />
+        {
+          // <Footer />
+        }
         {!visible ? (
           <button
             className="scrollToTop button-theme nav-scroll"

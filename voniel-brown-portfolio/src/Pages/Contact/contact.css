@@ -1,7 +1,7 @@
 .contactPage {
-  gap: 200px;
+  /* gap: 200px; */
   min-height: 780px;
-  width: 100vw;
+  /* width: 100vw; */
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -27,18 +27,16 @@
 
 .skills-container {
   display: flex;
-  gap: 30px;
+  justify-content: space-evenly;
+  margin-top: 90px;
+  margin-bottom: 50px;
 }
 
 .skill-icon {
   height: 90px;
+  margin-left: 50px;
 }
 
-/* .darkmode .skill-icon {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-} */
 .postgres {
   height: 90px;
 }
