@@ -71,7 +71,22 @@
   color: black;
 }
 
+.resume {
+  color: #000000;
+}
+
+.darkMode .resume {
+  color: #fafafa;
+}
+
 @media screen and (max-width: 810px) {
+  .external-links {
+    align-items: center;
+  }
+  .external-links .github {
+    margin-bottom: 40px;
+  }
+
   .navbar .navigation-items {
     display: none;
   }
@@ -340,5 +355,23 @@
 }
 
 .nav-button-scroll:hover .toolTipText {
+  visibility: visible;
+}
+
+.footer-icon .toolTipText {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  border-radius: 6px;
+  padding: 5px 0;
+  left: 45%;
+  padding-left: 8px;
+
+  position: absolute;
+  z-index: 1;
+}
+
+.footer-icon:hover .toolTipText {
   visibility: visible;
 }

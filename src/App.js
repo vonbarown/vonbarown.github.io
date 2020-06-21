@@ -27,6 +27,7 @@ import {
   faArrowLeft,
   faCopyright,
   faChevronCircleDown,
+  faFile,
 } from "@fortawesome/free-solid-svg-icons";
 
 library.add(
@@ -39,10 +40,11 @@ library.add(
   faGitAlt,
   faArrowLeft,
   faCopyright,
-  faChevronCircleDown
+  faChevronCircleDown,
+  faFile
 );
 
-class Landing extends Component {
+class App extends Component {
   state = {
     sideDrawerOpen: false,
     darkMode: false,
@@ -190,4 +192,4 @@ class Landing extends Component {
   }
 }
 
-export default Landing;
+export default App;

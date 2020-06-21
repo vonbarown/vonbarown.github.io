@@ -18,10 +18,6 @@
   border-radius: 5px;
   background: linear-gradient(145deg, #2e7670, #378c85);
 }
-.submit:hover {
-  background: linear-gradient(145deg, #3787bc, #41a1e0);
-  box-shadow: 7px 7px 14px #3480b2, -7px -7px 14px #46adf0;
-}
 
 .skills-container {
   display: flex;
