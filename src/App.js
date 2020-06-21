@@ -10,6 +10,7 @@ import { Element, animateScroll as scroll, scroller } from "react-scroll";
 import { SideDrawer } from "./Components/Navigation/SideDrawer";
 import { Backdrop } from "./Components/Navigation/Backdrop/Backdrop";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import OpengraphReactComponent from "opengraph-react";
 
 import "./App.css";
 
@@ -138,6 +139,13 @@ class App extends Component {
     }
     return (
       <div className={darkMode ? "darkMode" : "App"}>
+        {
+          // <OpengraphReactComponent
+          //   site={"https://vonielbrown.com/"}
+          //   appId={process.env.REACT_APP_OPGKEY}
+          //   size={"large"}
+          // />
+        }
         <SideDrawer
           scrollTo={this.scrollTo}
           show={sideDrawerOpen}
