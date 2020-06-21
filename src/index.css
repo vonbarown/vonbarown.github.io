@@ -1,5 +1,4 @@
 body {
-  margin: 0;
   font-family: "Open Sans", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -28,7 +27,6 @@ html {
 *:after {
   box-sizing: inherit;
 }
-
 body,
 h1,
 h2,
@@ -47,9 +45,4 @@ ul {
 ol,
 ul {
   list-style: none;
-}
-
-img {
-  max-width: 100%;
-  height: auto;
 }
