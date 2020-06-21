@@ -48,9 +48,11 @@
   }
 
   .skills-container {
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     flex-direction: column;
-    /* width: 100%; */
+  }
+  .github {
+    margin-top: 40px;
   }
 }
 

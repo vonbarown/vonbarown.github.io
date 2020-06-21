@@ -16,8 +16,6 @@
   position: fixed;
   margin-left: -36px;
   flex-direction: column;
-  /* background-image: linear-gradient(lightblue, rgba(173, 216, 230, 0)); */
-  /* background-image: linear-gradient(teal, rgba(55, 140, 133, 0)); */
 }
 
 .nav-buttons {
@@ -90,6 +88,21 @@
 
   .sidebar-toggle-button {
     margin-left: -15px;
+  }
+
+  .nav-button-scroll .toolTipText {
+    display: none;
+    /* visibility: hidden; */
+    /* width: 120px;
+    background-color: black;
+    color: #fff;
+    border-radius: 6px;
+    padding: 5px 0;
+    margin-right: -90px;
+    padding-left: 8px;
+
+    position: absolute;
+    z-index: 1; */
   }
 }
 

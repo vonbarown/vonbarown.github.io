@@ -1,5 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Aguafina+Script&display=swap");
 
+body {
+  font-family: "Open Sans", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: linear-gradient(
+    75deg,
+    rgba(170, 194, 170, 0.329),
+    rgba(51, 38, 38, 0.171)
+  );
+}
+
 .App,
 .darkMode {
   width: 100%;
@@ -72,16 +83,19 @@ button {
 .scrollDown {
   position: sticky;
   font-size: 20px;
-  transition: transform 0.9s ease-in;
   margin-bottom: 60px;
-  border-radius: 50px;
+  border-radius: 100px;
   width: 50px;
   padding: 10px;
-  background-image: linear-gradient(
-    145deg,
-    rgb(46, 118, 112),
-    rgb(55, 140, 133)
-  );
+  background-color: transparent;
+  z-index: 90;
+}
+
+.chevronDown {
+  position: sticky;
+  font-size: 40px;
+  z-index: -1;
+  color: rgb(55, 140, 133);
 }
 
 .page-title {
@@ -93,4 +107,54 @@ button {
 .darkMode .page-title {
   border-top: 2px solid white;
   border-bottom: 2px solid white;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+/* css reset */
+* {
+  box-sizing: border-box;
+}
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+.App {
+  overflow-x: hidden;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+@media screen and (max-width: 768px) {
+  .scrollDown {
+    position: relative;
+    bottom: 110px;
+  }
 }

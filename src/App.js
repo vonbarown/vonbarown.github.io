@@ -9,6 +9,8 @@ import Contact from "./Pages/Contact/Contact";
 import { Element, animateScroll as scroll, scroller } from "react-scroll";
 import { SideDrawer } from "./Components/Navigation/SideDrawer";
 import { Backdrop } from "./Components/Navigation/Backdrop/Backdrop";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
 import "./App.css";
 
 import { library } from "@fortawesome/fontawesome-svg-core";
@@ -21,7 +23,11 @@ import {
   faJs,
   faGitAlt,
 } from "@fortawesome/free-brands-svg-icons";
-import { faArrowLeft, faCopyright } from "@fortawesome/free-solid-svg-icons";
+import {
+  faArrowLeft,
+  faCopyright,
+  faChevronCircleDown,
+} from "@fortawesome/free-solid-svg-icons";
 
 library.add(
   faGithub,
@@ -32,7 +38,8 @@ library.add(
   faJs,
   faGitAlt,
   faArrowLeft,
-  faCopyright
+  faCopyright,
+  faChevronCircleDown
 );
 
 class Landing extends Component {
@@ -128,7 +135,7 @@ class Landing extends Component {
       );
     }
     return (
-      <div className={darkMode ? "landing darkMode" : "App"}>
+      <div className={darkMode ? "darkMode" : "App"}>
         <SideDrawer
           scrollTo={this.scrollTo}
           show={sideDrawerOpen}
@@ -152,7 +159,11 @@ class Landing extends Component {
               className="scrollDown"
               onClick={this.scrollTo}
             >
-              V
+              <FontAwesomeIcon
+                onClick={this.scrollTo}
+                className=" chevronDown"
+                icon={["fas", "chevron-circle-down"]}
+              />
             </button>
           ) : null}
         </Element>
