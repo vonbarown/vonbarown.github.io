@@ -10,7 +10,7 @@ import { Element, animateScroll as scroll, scroller } from "react-scroll";
 import { SideDrawer } from "./Components/Navigation/SideDrawer";
 import { Backdrop } from "./Components/Navigation/Backdrop/Backdrop";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import OpengraphReactComponent from "opengraph-react";
+// import OpengraphReactComponent from "opengraph-react";
 
 import "./App.css";
 
