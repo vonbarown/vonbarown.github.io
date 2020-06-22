@@ -9,8 +9,6 @@ import { Element, animateScroll as scroll, scroller } from "react-scroll";
 import { SideDrawer } from "./Components/Navigation/SideDrawer";
 import { Backdrop } from "./Components/Navigation/Backdrop/Backdrop";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import OpengraphReactComponent from "opengraph-react";
-
 import "./App.css";
 
 import { library } from "@fortawesome/fontawesome-svg-core";
@@ -137,12 +135,6 @@ class App extends Component {
     }
     return (
       <div className={darkMode ? "darkMode" : "App"}>
-        <OpengraphReactComponent
-          site={"https://vonielbrown.com/"}
-          appId={process.env.REACT_APP_OPGKEY}
-          size={"large"}
-        />
-
         <SideDrawer
           scrollTo={this.scrollTo}
           show={sideDrawerOpen}
@@ -161,11 +153,6 @@ class App extends Component {
           <Home />
 
           {visible ? (
-            // <button
-            //   name="projects"
-            //   className="scrollDown"
-            //   onClick={this.scrollTo}
-            // >
             <button
               name="projects"
               className="scrollDown"
@@ -176,8 +163,7 @@ class App extends Component {
                 icon={["fas", "chevron-circle-down"]}
               />
             </button>
-          ) : // </button>
-          null}
+          ) : null}
         </Element>
         <Element name="projects">
           <Projects />
