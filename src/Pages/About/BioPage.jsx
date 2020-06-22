@@ -1,4 +1,6 @@
 import React from "react";
+import { ExternalLinks } from "./ExternalLinks";
+
 import "./aboutPage.css";
 
 const About = () => {
@@ -25,6 +27,7 @@ const About = () => {
           </p>
         </div>
       </div>
+      <ExternalLinks />
     </div>
   );
 };

@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import Home from "./Pages/Home/HomePage";
 import About from "./Pages/About/BioPage";
 import { NavBar } from "./Components/Navigation/Navbar";
-import { Footer } from "./Components/Navigation/Footer";
 import Toggle from "react-toggle";
 import Projects from "./Pages/Projects/ProjectsPage";
 import Contact from "./Pages/Contact/Contact";
@@ -10,7 +9,7 @@ import { Element, animateScroll as scroll, scroller } from "react-scroll";
 import { SideDrawer } from "./Components/Navigation/SideDrawer";
 import { Backdrop } from "./Components/Navigation/Backdrop/Backdrop";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-// import OpengraphReactComponent from "opengraph-react";
+import OpengraphReactComponent from "opengraph-react";
 
 import "./App.css";
 
@@ -122,8 +121,7 @@ class App extends Component {
     let backDrop;
     let activeToggle;
 
-    let { visible, darkMode, toggle, sideDrawerOpen, blink } = this.state;
-    console.log(blink);
+    let { visible, darkMode, toggle, sideDrawerOpen } = this.state;
 
     if (sideDrawerOpen) {
       backDrop = <Backdrop clicked={this.backDropClick} />;
@@ -139,13 +137,12 @@ class App extends Component {
     }
     return (
       <div className={darkMode ? "darkMode" : "App"}>
-        {
-          // <OpengraphReactComponent
-          //   site={"https://vonielbrown.com/"}
-          //   appId={process.env.REACT_APP_OPGKEY}
-          //   size={"large"}
-          // />
-        }
+        <OpengraphReactComponent
+          site={"https://vonielbrown.com/"}
+          appId={process.env.REACT_APP_OPGKEY}
+          size={"large"}
+        />
+
         <SideDrawer
           scrollTo={this.scrollTo}
           show={sideDrawerOpen}
@@ -164,18 +161,23 @@ class App extends Component {
           <Home />
 
           {visible ? (
+            // <button
+            //   name="projects"
+            //   className="scrollDown"
+            //   onClick={this.scrollTo}
+            // >
             <button
               name="projects"
               className="scrollDown"
               onClick={this.scrollTo}
             >
               <FontAwesomeIcon
-                onClick={this.scrollTo}
-                className=" chevronDown"
+                className="chevronDown"
                 icon={["fas", "chevron-circle-down"]}
               />
             </button>
-          ) : null}
+          ) : // </button>
+          null}
         </Element>
         <Element name="projects">
           <Projects />
@@ -186,7 +188,6 @@ class App extends Component {
         <Element name="contact">
           <Contact />
         </Element>
-        {<Footer />}
         {!visible ? (
           <button
             className="scrollToTop button-theme nav-scroll"
@@ -195,6 +196,19 @@ class App extends Component {
             Top
           </button>
         ) : null}
+        <a
+          href="https://www.linkedin.com/in/vonielbrown/"
+          target="_blank"
+          className="copyright-container"
+          rel="noopener noreferrer"
+        >
+          {" "}
+          <FontAwesomeIcon
+            className="fa-icon footer-icon copyright"
+            icon={["fa", "copyright"]}
+          />
+          <p style={{ marginTop: "5px" }}>Voniel Brown</p>
+        </a>
       </div>
     );
   }

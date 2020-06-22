@@ -82,13 +82,11 @@ button {
 
 .scrollDown {
   position: sticky;
-  font-size: 20px;
   margin-bottom: 60px;
-  border-radius: 100px;
-  width: 50px;
-  padding: 10px;
+  border-radius: 50%;
+  height: 50px;
+  width: 48px;
   background-color: transparent;
-  z-index: 90;
 }
 
 .chevronDown {
@@ -157,4 +155,9 @@ ul {
     position: relative;
     bottom: 110px;
   }
+}
+
+button:focus {
+  outline: none;
+  box-shadow: none;
 }

@@ -1,7 +1,7 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-export const Footer = () => {
+export const ExternalLinks = () => {
   return (
     <div className="footer">
       <div className="external-links">
@@ -36,19 +36,6 @@ export const Footer = () => {
           >
             <span class="toolTipText">About</span>
           </FontAwesomeIcon>
-        </a>
-        <a
-          href="https://www.linkedin.com/in/vonielbrown/"
-          target="_blank"
-          className="copyright-container"
-          rel="noopener noreferrer"
-        >
-          {" "}
-          <FontAwesomeIcon
-            className="fa-icon footer-icon copyright"
-            icon={["fa", "copyright"]}
-          />
-          <p style={{ marginTop: "5px" }}>Voniel Brown</p>
         </a>
       </div>
     </div>
