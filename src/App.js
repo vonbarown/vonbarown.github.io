@@ -166,7 +166,7 @@ class App extends Component {
           ) : null}
         </Element>
         <Element name="projects">
-          <Projects />
+          <Projects darkMode={darkMode} />
         </Element>
         <Element name="about">
           <About />
