@@ -23,33 +23,37 @@ export const SideDrawer = ({ scrollTo, show, darkMode, handleThemeToggle }) => {
           >
             VB
           </button>
-          <button className="nav-button nav-button-scroll">
+          <button
+            className="nav-button nav-button-scroll"
+            name="about"
+            onClick={scrollTo}
+          >
             <span class="toolTipText">About</span>
-            <img
-              src={user}
-              alt="About"
-              onClick={scrollTo}
-              name="about"
-              className="nav-icon"
-            />
+            <img src={user} alt="About" name="about" className="nav-icon" />
           </button>
-          <button className="nav-button nav-button-scroll">
+          <button
+            className="nav-button nav-button-scroll"
+            onClick={scrollTo}
+            name="projects"
+          >
             <span class="toolTipText">Projects</span>
             <img
               className="nav-icon"
               src={lightbulb}
               alt="Projects"
-              onClick={scrollTo}
               name="projects"
             />
           </button>
-          <button className="nav-button nav-button-scroll">
+          <button
+            className="nav-button nav-button-scroll"
+            onClick={scrollTo}
+            name="contact"
+          >
             <span class="toolTipText">Skills</span>
             <img
               className="nav-icon"
               src={skills}
               alt="Skills"
-              onClick={scrollTo}
               name="contact"
             />
           </button>
