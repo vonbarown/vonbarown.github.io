@@ -21,7 +21,7 @@ export const NavBar = ({ scrollTo, drawerClick }) => {
             VB
           </button>
           <button
-            className="nav-button nav-button-scroll"
+            className="nav-button nav-button-scroll toolTipTextParent"
             onClick={scrollTo}
             name="about"
           >
@@ -29,7 +29,7 @@ export const NavBar = ({ scrollTo, drawerClick }) => {
             <img src={user} alt="About" name="about" className="nav-icon" />
           </button>
           <button
-            className="nav-button nav-button-scroll"
+            className="nav-button nav-button-scroll toolTipTextParent"
             onClick={scrollTo}
             name="projects"
           >
@@ -42,7 +42,7 @@ export const NavBar = ({ scrollTo, drawerClick }) => {
             />
           </button>
           <button
-            className="nav-button nav-button-scroll"
+            className="nav-button nav-button-scroll toolTipTextParent"
             onClick={scrollTo}
             name="contact"
           >

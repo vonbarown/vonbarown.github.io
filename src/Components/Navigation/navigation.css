@@ -288,7 +288,7 @@
   margin-top: 30px;
 }
 
-.nav-button-scroll .toolTipText {
+.toolTipTextParent .toolTipText {
   visibility: hidden;
   width: 120px;
   background-color: black;
@@ -302,6 +302,6 @@
   z-index: 1;
 }
 
-.nav-button-scroll:hover .toolTipText {
+.toolTipTextParent:hover .toolTipText {
   visibility: visible;
 }

@@ -24,6 +24,17 @@ export const ProjectCard = ({
             >
               <div className="inner">
                 <h2 id="card-title">{title}</h2>
+                {title === "A9 Fashion Design" ? (
+                  <span className="toolTipTextParent">
+                    <span class="toolTipText " id="awardToolTipText">
+                      Most Profitable Award
+                    </span>
+                    <FontAwesomeIcon
+                      className="fas award"
+                      icon={["fas", "award"]}
+                    ></FontAwesomeIcon>
+                  </span>
+                ) : null}
                 <label htmlFor={title} className="button" aria-hidden="true">
                   Details
                 </label>

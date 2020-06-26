@@ -24,7 +24,7 @@ export const SideDrawer = ({ scrollTo, show, darkMode, handleThemeToggle }) => {
             VB
           </button>
           <button
-            className="nav-button nav-button-scroll"
+            className="nav-button nav-button-scroll toolTipTextParent"
             name="about"
             onClick={scrollTo}
           >
@@ -32,7 +32,7 @@ export const SideDrawer = ({ scrollTo, show, darkMode, handleThemeToggle }) => {
             <img src={user} alt="About" name="about" className="nav-icon" />
           </button>
           <button
-            className="nav-button nav-button-scroll"
+            className="nav-button nav-button-scroll  toolTipTextParent"
             onClick={scrollTo}
             name="projects"
           >
@@ -45,7 +45,7 @@ export const SideDrawer = ({ scrollTo, show, darkMode, handleThemeToggle }) => {
             />
           </button>
           <button
-            className="nav-button nav-button-scroll"
+            className="nav-button nav-button-scroll toolTipTextParent"
             onClick={scrollTo}
             name="contact"
           >
