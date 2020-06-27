@@ -11,7 +11,7 @@ const Home = () => {
     <div className="homePage">
       <img src={logo} alt="logo" className="logo" />
       <div className="intro">
-        Hello, My Name is <h1>Voniel Brown</h1>
+        Hello, My Name is <h1 style={{ marginLeft: "15px" }}> Voniel Brown </h1>
       </div>
       <div>
         Full Stack software engineering fellow currently studying at Pursuit

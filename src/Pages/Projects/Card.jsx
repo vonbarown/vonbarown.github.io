@@ -26,8 +26,8 @@ export const ProjectCard = ({
                 <h2 id="card-title">{title}</h2>
                 {title === "A9 Fashion Design" ? (
                   <span className="toolTipTextParent">
-                    <span class="toolTipText " id="awardToolTipText">
-                      Most Profitable Award
+                    <span className="toolTipText " id="awardToolTipText">
+                      Awarded Most Profitable
                     </span>
                     <FontAwesomeIcon
                       className="fas award"
@@ -46,9 +46,11 @@ export const ProjectCard = ({
                   <a href={repo} target="_blank" rel="noopener noreferrer">
                     Github
                   </a>
-                  <a href={live} target="_blank" rel="noopener noreferrer">
-                    Live Site
-                  </a>
+                  {title !== "A9 Fashion Design" ? (
+                    <a href={live} target="_blank" rel="noopener noreferrer">
+                      Live Site
+                    </a>
+                  ) : null}
                 </div>
                 <div className="description">
                   <p>{description}</p>

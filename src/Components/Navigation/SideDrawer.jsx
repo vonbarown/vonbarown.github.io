@@ -28,7 +28,7 @@ export const SideDrawer = ({ scrollTo, show, darkMode, handleThemeToggle }) => {
             name="about"
             onClick={scrollTo}
           >
-            <span class="toolTipText">About</span>
+            <span className="toolTipText">About</span>
             <img src={user} alt="About" name="about" className="nav-icon" />
           </button>
           <button
@@ -36,7 +36,7 @@ export const SideDrawer = ({ scrollTo, show, darkMode, handleThemeToggle }) => {
             onClick={scrollTo}
             name="projects"
           >
-            <span class="toolTipText">Projects</span>
+            <span className="toolTipText">Projects</span>
             <img
               className="nav-icon"
               src={lightbulb}
@@ -49,7 +49,7 @@ export const SideDrawer = ({ scrollTo, show, darkMode, handleThemeToggle }) => {
             onClick={scrollTo}
             name="contact"
           >
-            <span class="toolTipText">Skills</span>
+            <span className="toolTipText">Skills</span>
             <img
               className="nav-icon"
               src={skills}

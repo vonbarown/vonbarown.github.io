@@ -26,7 +26,7 @@ import {
   faCopyright,
   faChevronCircleDown,
   faFile,
-  faAward
+  faAward,
 } from "@fortawesome/free-solid-svg-icons";
 
 library.add(
@@ -60,7 +60,7 @@ class App extends Component {
     const darkPref = window.matchMedia("(prefers-color-scheme: dark)");
 
     if (darkPref.matches) {
-      console.log(darkPref);
+      // console.log(darkPref);
       this.setState((prevState) => {
         return {
           darkMode: !prevState.darkMode,
