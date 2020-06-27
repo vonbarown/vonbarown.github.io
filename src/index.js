@@ -19,4 +19,7 @@ const frontEndSkills = [
 const backEndSkills = ["Node.js/Express", "PostgreSQL"];
 
 console.info(infoMsg);
-console.table({ frontend: frontEndSkills, backend: backEndSkills });
+console.table({
+  "frontend skills": frontEndSkills,
+  "backend skills": backEndSkills,
+});
