@@ -16,7 +16,7 @@ const frontEndSkills = [
   "HTML5/CSS3",
 ];
 
-const backEndSkills = ["Node.js/Express", "PostgreSQL"];
+const backEndSkills = ["Node.js,Express", "PostgreSQL"];
 
 console.info(infoMsg);
 console.table({
