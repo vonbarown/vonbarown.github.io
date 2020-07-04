@@ -26,7 +26,7 @@ export const ExternalLinks = () => {
           />
         </a>
         <a
-          href="https://docs.google.com/document/d/1FVX_MOXaNgtfrqnvRbd7NVDokp8qdrceX7_qwOmFF-g/edit?usp=sharing"
+          href="https://docs.google.com/document/d/1F_-TJfSk8PEa7cDVMf1vUb3595CzSyY7PJDNkzcnTz4/edit?usp=sharing"
           target="_blank"
           rel="noopener noreferrer"
         >
