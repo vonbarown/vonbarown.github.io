@@ -5,6 +5,7 @@ import synergie_landing from "../../assets/synergie-landing.png";
 import portfolio_light from "../../assets/portfolio_light.png";
 import portfolio_page from "../../assets/portfolio_page.png";
 import A9 from "../../assets/A9.png";
+import SAM from "../../assets/studet-data-management.png";
 
 const Projects = ({ darkMode }) => {
   const projects = [
@@ -40,13 +41,13 @@ const Projects = ({ darkMode }) => {
       live: `https://vonielbrown.com/`,
       repo: `https://github.com/vonbarown/vonbarown.github.io`,
     },
-    // {
-    //   title: `Student Data Management`,
-    //   description: `A web application that for universities to manage student enrollment`,
-    //   img_url: darkMode ? portfolio_light : portfolio_page,
-    //   live: `https://vonbarown.github.io/Vonbarown-University/index.html`,
-    //   repo: `https://github.com/vonbarown/Vonbarown-University`,
-    // },
+    {
+      title: `Student Data Management`,
+      description: `A web application that for universities to manage student enrollment`,
+      img_url: SAM,
+      live: `https://vonbarown.github.io/Student-Data-Management/`,
+      repo: `https://github.com/vonbarown/Vonbarown-University`,
+    },
 
     // {
     //   title: `WanderFull`,

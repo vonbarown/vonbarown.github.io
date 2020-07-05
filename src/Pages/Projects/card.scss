@@ -21,7 +21,6 @@ $accent-color: #355cc9;
 
 .more {
   display: none;
-
   &:checked ~ .content {
     transform: rotateY(180deg);
   }
