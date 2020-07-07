@@ -27,6 +27,7 @@ import {
   faChevronCircleDown,
   faFile,
   faAward,
+  faGlobe,
 } from "@fortawesome/free-solid-svg-icons";
 
 library.add(
@@ -41,7 +42,8 @@ library.add(
   faCopyright,
   faChevronCircleDown,
   faFile,
-  faAward
+  faAward,
+  faGlobe
 );
 
 class App extends Component {
