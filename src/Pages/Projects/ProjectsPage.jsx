@@ -41,13 +41,13 @@ const Projects = ({ darkMode }) => {
       live: `https://vonielbrown.com/`,
       repo: `https://github.com/vonbarown/vonbarown.github.io`,
     },
-    {
-      title: `Student Data Management`,
-      description: `A web application that for universities to manage student enrollment`,
-      img_url: SAM,
-      live: `https://vonbarown.github.io/Student-Data-Management/`,
-      repo: `https://github.com/vonbarown/Vonbarown-University`,
-    },
+    // {
+    //   title: `Student Data Management`,
+    //   description: `A web application that for universities to manage student enrollment`,
+    //   img_url: SAM,
+    //   live: `https://vonbarown.github.io/Student-Data-Management/`,
+    //   repo: `https://github.com/vonbarown/Vonbarown-University`,
+    // },
 
     // {
     //   title: `WanderFull`,
