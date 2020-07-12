@@ -5,7 +5,7 @@ import synergie_landing from "../../assets/synergie-landing.png";
 import portfolio_light from "../../assets/portfolio_light.png";
 import portfolio_page from "../../assets/portfolio_page.png";
 import A9 from "../../assets/A9.png";
-import SAM from "../../assets/studet-data-management.png";
+// import SAM from "../../assets/studet-data-management.png";
 
 const Projects = ({ darkMode }) => {
   const projects = [
