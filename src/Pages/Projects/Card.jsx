@@ -44,23 +44,11 @@ export const ProjectCard = ({
               <div className="inner">
                 <div className="links">
                   <div>
-                    <FontAwesomeIcon
-                      style={{
-                        color: "black",
-                        position: "absolute",
-                        left: 117,
-                        top: 28,
-                      }}
-                      icon={["fab", "github"]}
-                    />{" "}
-                    <a
-                      href={repo}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      style={{
-                        marginLeft: 110,
-                      }}
-                    >
+                    <a href={repo} target="_blank" rel="noopener noreferrer">
+                      <FontAwesomeIcon
+                        icon={["fab", "github"]}
+                        style={{ color: "black" }}
+                      />{" "}
                       Github
                     </a>
                   </div>
@@ -68,7 +56,6 @@ export const ProjectCard = ({
                     <a href={live} target="_blank" rel="noopener noreferrer">
                       <FontAwesomeIcon
                         style={{ color: "black" }}
-                        // className="fas"
                         icon={["fas", "globe"]}
                       />{" "}
                       Live Site
