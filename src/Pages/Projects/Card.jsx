@@ -43,11 +43,34 @@ export const ProjectCard = ({
             <div className="back">
               <div className="inner">
                 <div className="links">
-                  <a href={repo} target="_blank" rel="noopener noreferrer">
-                    Github
-                  </a>
+                  <div>
+                    <FontAwesomeIcon
+                      style={{
+                        color: "black",
+                        position: "absolute",
+                        left: 117,
+                        top: 28,
+                      }}
+                      icon={["fab", "github"]}
+                    />{" "}
+                    <a
+                      href={repo}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      style={{
+                        marginLeft: 110,
+                      }}
+                    >
+                      Github
+                    </a>
+                  </div>
                   {title !== "A9 Fashion Design" ? (
                     <a href={live} target="_blank" rel="noopener noreferrer">
+                      <FontAwesomeIcon
+                        style={{ color: "black" }}
+                        // className="fas"
+                        icon={["fas", "globe"]}
+                      />{" "}
                       Live Site
                     </a>
                   ) : null}
