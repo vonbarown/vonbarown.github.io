@@ -23,14 +23,6 @@ export const NavBar = ({ scrollTo, drawerClick }) => {
           <button
             className="nav-button nav-button-scroll toolTipTextParent"
             onClick={scrollTo}
-            name="about"
-          >
-            <span className="toolTipText">About</span>
-            <img src={user} alt="About" name="about" className="nav-icon" />
-          </button>
-          <button
-            className="nav-button nav-button-scroll toolTipTextParent"
-            onClick={scrollTo}
             name="projects"
           >
             <span className="toolTipText">Projects</span>
@@ -40,6 +32,14 @@ export const NavBar = ({ scrollTo, drawerClick }) => {
               alt="Projects"
               name="projects"
             />
+          </button>
+          <button
+            className="nav-button nav-button-scroll toolTipTextParent"
+            onClick={scrollTo}
+            name="about"
+          >
+            <span className="toolTipText">About</span>
+            <img src={user} alt="About" name="about" className="nav-icon" />
           </button>
           <button
             className="nav-button nav-button-scroll toolTipTextParent"

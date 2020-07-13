@@ -103,3 +103,7 @@ a:focus {
   outline: none;
   box-shadow: none;
 }
+
+.about {
+  margin-top: -55px;
+}

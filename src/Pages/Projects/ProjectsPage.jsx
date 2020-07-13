@@ -5,7 +5,7 @@ import synergie_landing from "../../assets/synergie-landing.png";
 import portfolio_light from "../../assets/portfolio_light.png";
 import portfolio_page from "../../assets/portfolio_page.png";
 import A9 from "../../assets/A9.png";
-import SAM from "../../assets/student-data-management.png";
+import SDM from "../../assets/student-data-management.png";
 
 const Projects = ({ darkMode }) => {
   const projects = [
@@ -44,7 +44,7 @@ const Projects = ({ darkMode }) => {
     {
       title: `Student Data Management`,
       description: `A web application that for universities to manage student enrollment`,
-      img_url: SAM,
+      img_url: SDM,
       live: `https://vonbarown.github.io/Student-Data-Management/`,
       repo: `https://github.com/vonbarown/Vonbarown-University`,
     },
