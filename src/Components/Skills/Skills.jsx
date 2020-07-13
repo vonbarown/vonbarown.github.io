@@ -1,8 +1,14 @@
 import React from "react";
+import typescript from "../../assets/icons8-typescript.svg";
 
 export const Skills = () => {
   return (
     <div className="skills-container">
+      <div className="skills-icon-div">
+        <img className="skill-icon" src={typescript} alt="" />
+
+        <p>TypeScript</p>
+      </div>
       <div className="skills-icon-div">
         <svg className="skill-icon" viewBox="0 0 128 128">
           <path

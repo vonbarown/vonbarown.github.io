@@ -15,8 +15,8 @@
   flex-direction: column;
   overflow-y: scroll;
 }
-.project-title {
-  margin-bottom: 20px;
+.page-title {
+  margin-bottom: 90px;
 }
 
 .flex {
