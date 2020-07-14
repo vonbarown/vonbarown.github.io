@@ -48,6 +48,17 @@ const Projects = ({ darkMode }) => {
       live: `https://vonbarown.github.io/Student-Data-Management/`,
       repo: `https://github.com/vonbarown/Vonbarown-University`,
     },
+    // {
+    //   title: `Pantry`,
+    //   description: `Pantry is a React Native app that aims to make food management easier for
+    //   all households. It helps people track their food inventory, which we call Pantry,
+    //   by scanning your grocery receipts to know whats in stock and what's
+    //    not in order to make your next grocery shopping a breeze. With easier management of their pantry
+    //    through Pantry more households will be able to cut down on their environmental impact`,
+    //   img_url: SDM,
+    //   live: `https://vonbarown.github.io/Student-Data-Management/`,
+    //   repo: `https://github.com/vonbarown/PantryApp`,
+    // },
 
     // {
     //   title: `WanderFull`,
