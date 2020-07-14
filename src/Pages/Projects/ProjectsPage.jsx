@@ -60,15 +60,15 @@ const Projects = ({ darkMode }) => {
     //   repo: `https://github.com/vonbarown/PantryApp`,
     // },
 
-    // {
-    //   title: `WanderFull`,
-    //   description: `
-    //     My portfolio site built using react
-    //   `,
-    //   img_url: portfolio_light,
-    //   live: `https://wanderfull-react.herokuapp.com`,
-    //   repo: `https://github.com/vonbarown/WanderFull`,
-    // },
+    {
+      title: `WanderFull`,
+      description: `
+        My portfolio site built using react
+      `,
+      img_url: portfolio_light,
+      live: `https://wanderfull-react.herokuapp.com`,
+      repo: `https://github.com/vonbarown/WanderFull`,
+    },
   ];
 
   return (
