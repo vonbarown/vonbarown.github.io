@@ -52,7 +52,7 @@ export const ProjectCard = ({
                       Github
                     </a>
                   </div>
-                  {title !== "A9 Fashion Design" ? (
+                  {title !== "A9 Fashion Design" && title !== "Pantry" ? (
                     <a href={live} target="_blank" rel="noopener noreferrer">
                       <FontAwesomeIcon
                         style={{ color: "black" }}
