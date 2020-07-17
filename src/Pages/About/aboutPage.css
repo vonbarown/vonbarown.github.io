@@ -6,6 +6,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  margin-top: 175px;
 }
 
 .container {
@@ -104,6 +105,6 @@ a:focus {
   box-shadow: none;
 }
 
-.about {
-  margin-top: -55px;
+#about {
+  margin-top: -195px;
 }

@@ -14,6 +14,8 @@
   align-items: center;
   flex-direction: column;
   overflow-y: scroll;
+  margin-top: 180px;
+  position: absolute;
 }
 .page-title {
   margin-bottom: 90px;
@@ -56,6 +58,9 @@
 @media screen and (min-width: 769px) {
   .portfolioPage .flex {
     flex-wrap: wrap;
+  }
+  .inner-frame {
+    margin-bottom: 0px;
   }
 }
 

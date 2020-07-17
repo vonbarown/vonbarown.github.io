@@ -8,7 +8,9 @@ const Contact = () => {
 
   return (
     <div className="contactPage">
-      <h1 className="page-title">Skills</h1>
+      <h1 className="page-title" id="skills">
+        Skills
+      </h1>
       <div className="skills-component">
         <Skills />
       </div>
