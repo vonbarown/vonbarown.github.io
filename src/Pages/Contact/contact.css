@@ -19,6 +19,10 @@
   background: linear-gradient(145deg, #2e7670, #378c85);
 }
 
+.submit:hover {
+  cursor: pointer;
+}
+
 .skills-container {
   display: flex;
   justify-content: space-evenly;

@@ -19,3 +19,18 @@
 .home-contact-btn {
   margin-top: 60px;
 }
+
+#pursuit {
+  margin-left: 5px;
+  text-decoration: none;
+  color: black;
+}
+
+.darkMode #pursuit {
+  color: white;
+}
+
+#pursuit:hover {
+  color: blue;
+  text-decoration: underline;
+}

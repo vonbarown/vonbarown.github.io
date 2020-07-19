@@ -42,6 +42,17 @@ $accent-color: #355cc9;
     display: grid;
     padding: 1.5em;
     transform: translateZ(80px) scale(0.94);
+
+    .tech-used-heading {
+      font-size: 25px;
+      color: #355cc9;
+      margin-bottom: 6px;
+    }
+
+    .tech {
+      color: #355cc9;
+      font-size: 15px;
+    }
   }
 }
 
