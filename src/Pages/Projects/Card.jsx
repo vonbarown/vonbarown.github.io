@@ -68,7 +68,11 @@ export const ProjectCard = ({
                   <div className="tech-used">
                     <h6 className="tech-used-heading">Technologies Used</h6>
                     {tech.map((el) => {
-                      return <p className="tech">{el}</p>;
+                      return (
+                        <p className="tech" key={el}>
+                          {el}
+                        </p>
+                      );
                     })}
                   </div>
                 </div>
