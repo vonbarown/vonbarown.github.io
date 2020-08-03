@@ -2,7 +2,7 @@
 
 <p>
   <img src="https://raw.githubusercontent.com/vonbarown/Portfolio/master/src/assets/portfolio_page.png" width="856" title="portfolio site image">
-</p>\
+</p>
 
 To view Click the link
 [Voniel Brown](https://vonielbrown.com/)
