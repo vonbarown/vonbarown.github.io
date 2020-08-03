@@ -1,6 +1,8 @@
-# My Portfolio Site
+<h1 align="center">My Portfolio Site<h1/>
 
-## Showcasing projects that I have completed so far
+<p>
+  <img src="https://raw.githubusercontent.com/vonbarown/Portfolio/master/src/assets/portfolio_page.png" width="856" title="portfolio site image">
+</p>\
 
 To view Click the link
 [Voniel Brown](https://vonielbrown.com/)
