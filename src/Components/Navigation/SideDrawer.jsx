@@ -1,8 +1,8 @@
 import React from "react";
 import "./navigation.css";
-import skills from "../../assets/skills.svg";
-import lightbulb from "../../assets/lightbulb.svg";
-import user from "../../assets/user.svg";
+import skills from "../../Assets/skills.svg";
+import lightbulb from "../../Assets/lightbulb.svg";
+import user from "../../Assets/user.svg";
 
 export const SideDrawer = ({ scrollTo, show, darkMode, handleThemeToggle }) => {
   let drawerClassNames = ["side-drawer"];

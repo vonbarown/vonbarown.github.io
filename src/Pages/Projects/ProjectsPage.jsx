@@ -1,12 +1,12 @@
 import React from "react";
 import "./projects.css";
 import { ProjectCard } from "./Card";
-import synergie_landing from "../../assets/synergie-landing.png";
-import portfolio_light from "../../assets/portfolio_light.png";
-import portfolio_page from "../../assets/portfolio_page.png";
-import A9 from "../../assets/A9.png";
-import SDM from "../../assets/student-data-management.png";
-import pantry from "../../assets/pantry.png";
+import synergie_landing from "../../Assets/synergie-landing.png";
+import portfolio_light from "../../Assets/portfolio_light.png";
+import portfolio_page from "../../Assets/portfolio_page.png";
+import A9 from "../../Assets/A9.png";
+import SDM from "../../Assets/student-data-management.png";
+import pantry from "../../Assets/pantry.png";
 
 const Projects = ({ darkMode }) => {
   const projects = [
