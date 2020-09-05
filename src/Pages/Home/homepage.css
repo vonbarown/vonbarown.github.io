@@ -20,17 +20,17 @@
   margin-top: 60px;
 }
 
-#pursuit {
+#external-company {
   margin-left: 5px;
   text-decoration: none;
   color: black;
 }
 
-.darkMode #pursuit {
+.darkMode #external-company {
   color: white;
 }
 
-#pursuit:hover {
+#external-company:hover {
   color: blue;
   text-decoration: underline;
 }
