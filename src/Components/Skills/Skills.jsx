@@ -1,5 +1,5 @@
 import React from "react";
-import typescript from "../../Assets/icons8-typescript.svg";
+import typescript from "../../assets/icons8-typescript.svg";
 
 export const Skills = () => {
   return (
