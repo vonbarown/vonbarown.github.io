@@ -5,7 +5,7 @@ import A9 from "../../assets/A9.png";
 import SDM from "../../assets/student-data-management.png";
 import pantry from "../../assets/pantry.png";
 
-export const projects = [
+export const projects = (darkMode) => [
     {
       title: `Pantry`,
       description: `Pantry is a React Native app that aims to make food management easier for
