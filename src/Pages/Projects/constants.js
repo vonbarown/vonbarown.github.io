@@ -1,3 +1,10 @@
+import synergie_landing from "../../Assets/synergie-landing.png";
+import portfolio_light from "../../Assets/portfolio_light.png";
+import portfolio_page from "../../Assets/portfolio_page.png";
+import A9 from "../../Assets/A9.png";
+import SDM from "../../Assets/student-data-management.png";
+import pantry from "../../Assets/pantry.png";
+
 export const projects = [
     {
       title: `Pantry`,
