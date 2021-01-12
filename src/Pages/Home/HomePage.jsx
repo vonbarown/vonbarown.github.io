@@ -17,7 +17,7 @@ const Home = () => {
         </h1>
       </div>
       <div>
-        A Software Engineering Apprentice at
+        A Software Engineer at
         <a
           id="external-company"
           href="https://www.codecademy.com/"
